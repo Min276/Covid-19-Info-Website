@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Covid-19 Info</title>
+    <link rel="shortcut icon" href="images1/logo1.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://covid-19.te4m.org/fd_bootstrap/css/fluent.css">
+<link rel="stylesheet" href="https://covid-19.te4m.org/fd_bootstrap/css/micon.min.css">
+<meta property="og:url"           content="https://covid-19infoweb.netlify.app/" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Covid-19 Info" />
+<meta property="og:description"   content="Covid Information Sharing Platform" />
+<meta property="og:image"         content="https://covid-19infoweb.netlify.app/images1/icon.jpg" />
+<meta name="google-site-verification" content="tFS9qQuGOGx0IR6XdEdCP4OERbnSGeD8Bj-82RiFiCE" />
+
+<style type="text/css">
+  table{
+    margin-bottom: 35px!important;
+  }
+  .dev{
+    background: #2196F3;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.dev a{
+  color: #000000;
+  /*font-weight: bold;*/
+}
+.dev a:hover{
+  color: #000000;
+}
+
+</style>
+</head>
+<body>
+
+    <div id="wrapper" class="clearfix">
+        <!-- Navbar -->
+<div id="fb-root"></div>
+<nav class="navbar  fixed-top navbar-expand-lg navbar-fixed-top navbar-light bg-light"style="background-color: #e3f2fd!important; ">
+  <a class="navbar-brand" href="#">
+    <img src="images1/logo1.png" alt="">
+     <!-- <img src="images1/icon1.png" alt=""> -->
+
+    Covid-19 Info
+  </a>
+ <!--  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item ">
+                <div class="flex-center">
+                   <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:20px;color:blue;
+    letter-spacing: 8px;"></i>Share to Facebook</a>
+
+<!--                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid19infoweb.netlify.app" target="_blank" class="fb-ic">
+                        <i class="mi mi-facebook-official mi-2x text-white-50 mr-md-3"> </i>
+                    </a> -->
+                </div>
+            </li>
+            <li class="nav-item ">
+                <div class="flex-center">
+                 
+                    <!-- <a target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcovid-19.te4m.org&amp;via=COVID19DAILYANALYTICS" alt="Tweet On Twitter">-->
+                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 20px;
+    color: blue;
+    margin-left: 22px;
+    letter-spacing: 8px;
+}"></i>Share to Messenger</a>
+
+                      <!--  <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic">Send In Messenger</a>
+                        <i class="mi mi-twitter mi-2x text-white-50 mr-md-5 mr-3"> </i>
+                    </a>
+ -->                </div>
+            </li>
+
+        </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+ -->  </div>
+</nav>
+
+
+                <div class="main-content" style="background:#add4e6">
+                  
+
+                <div class="container">
+
+        <center>
+        <section>
+          <div class="row">
+            <div class="col-md-12 col-sm-12" style="    margin-top: 88px;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 0 black;
+    color: #673AB7;">
+              Covid-19 Situations in Myanmar
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <hr style="margin-bottom: 10px;"color="orange">
+ <marquee bgcolor="orange"> 
+  <div class="running" style="font-size: 22px;color: #fff">Last Updated on 25th Oct 8PM:<q>*Myanmar currently has +11,692 lab tests, +986 confirmed cases, +1,212 recovered cases, and +29 deaths.</q><div>
+    </marquee>
+ <hr style=" margin-top: 4px;" color="orange">
+            </div>
+          </div>
+            <div class="row">
+
+  <div class="col-md-3 col-sm-12">
+
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Total Lab Tests</h5>
+    <p class="card-text" style="font-size: 18px;
+    font-weight: bold; color: #dad4d4;">605,843</p>
+  </div>
+</div>
+</div>
+    <div class="col-md-3 col-sm-12">
+  <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Confirmed Cases</h5>
+    <p class="card-text" style="font-size: 18px;
+    font-weight: bold; color: #dad4d4;">44,774</p>
+  </div>
+</div>
+  </div>
+  <div class="col-md-3 col-sm-12">
+  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Recovered Cases</h5>
+    <p class="card-text" style="font-size: 18px;
+    font-weight: bold; color: #dad4d4;">24,920</p>
+  </div>
+</div>
+</div>
+  <div class="col-md-3 col-sm-12">
+
+  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Death Toll</h5>
+    <p class="card-text" style="font-size: 18px;
+    font-weight: bold; color: #dad4d4;">1,095</p>
+  </div>
+</div>
+ </div>
+</div>
+</section>
+</center>
+<br>
+<section>
+<div class="row">
+          
+                <div class="col-md-6 col-sm-12">
+                    <div class="shadow-sm pt-1 pb-2 mb-5 bg-white rounded">
+                            <div id="daily_analytics_chart"></div>
+                            <!-- <p class="pl-4 pt-2 font-weight-bolder">
+                                ယနေ့အထိ ကူးစက်မှု ၁၀၀ လျှင် <span class="text-danger font-weight-bolder"> ( 7.00488% )</span> ရှိပါသည်
+                            </p> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="shadow-sm pt-1 pb-2 mb-5 bg-white rounded">
+                            <div id="daily_analytics_chart1"></div>
+                            <!-- <p class="pl-4 pt-2 font-weight-bolder">
+                                ယနေ့အထိ ကူးစက်မှု ၁၀၀ လျှင် <span class="text-danger font-weight-bolder"> ( 7.00488% )</span> ရှိပါသည်
+                            </p>
+ -->                        
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+<!--         <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="shadow-sm pt-1 pb-2 mb-5 bg-white rounded">
+                            <div id="daily_analytics_chart2"></div>
+                </div>
+              </div>
+                        <div class="col-md-6 col-sm-12">
+              <div class="shadow-sm pt-1 pb-2 mb-5 bg-white rounded">
+                            <div id="daily_analytics_chart3"></div>
+            </div>
+        </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+             <table class=" table table-striped table table-hover table-light">
+  <thead>
+    <tr>
+         <th colspan="4" style="text-align: center;">Covid Situations in Myanmar</th>
+       </tr>
+
+  </thead>
+  <tbody>
+        <tr style="background: black; color: white">
+      <th scope="col">No</th>
+      <th scope="col">Region</th>
+      <th scope="col">Confirmed Caes</th>
+      <!-- <th scope="col">Handle</th> -->
+    </tr>
+        <tr>
+      <td>1.</td>
+      <td>Yangon</td>
+      <td>34,165</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Rakhine</td>
+      <td>2,696</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Bago</td>
+      <td>2,264</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Mandalay</td>
+      <td>1,496</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Ayeyarwaddy</td>
+      <td>888</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Mon</td>
+      <td>609</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>Magaway</td>
+      <td>406</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Sagaing</td>
+      <td>320</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>Naypyidaw</td>
+      <td>265</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>Kayin</td>
+      <td>233</td>
+     </tr>
+     <tr>
+      <td>11.</td>
+      <td>Thanintharyi</td>
+      <td>143</td>
+    </tr>
+     <tr>
+      <td>12.</td>
+      <td>Kachin</td>
+      <td>133</td>
+    </tr>
+     <tr>
+      <td>13.</td>
+      <td>Shan</td>
+      <td>104</td>
+    </tr>
+     <tr>
+      <td>14.</td>
+      <td>Chin</td>
+      <td>64</td>
+    </tr>
+     <tr>
+      <td>15.</td>
+      <td>Kayah</td>
+      <td>2</td>
+    </tr>
+    <!-- <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>@twitter</td>
+    </tr> -->
+  </tbody>
+</table>
+
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <table class=" table table-striped table table-hover table-light">
+  <thead>
+    <tr>
+         <th colspan="4" style="text-align: center;">Top 15 Townships List (Yangon Region)</th>
+       </tr>
+
+  </thead>
+  <tbody class="tbody-light">
+       <tr style="background: #2196f3!important; color: white!important">
+      <th scope="col">No</th>
+      <th scope="col">Township</th>
+      <th scope="col">Confirmed Cases</th>
+      <!-- <th scope="col">Handle</th> -->
+    </tr>   
+      <tr>
+      <td>1.</td>
+      <td>North Okkalar</td>
+      <td>2,415</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Mingalardon</td>
+      <td>2,225</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Hlaing Thar Yar</td>
+      <td>2,164</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Insein</td>
+      <td>1,907</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Thingangyun</td>
+      <td>1,792</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Mayangone</td>
+      <td>1,434</td>
+    </tr>
+      <tr>
+      <td>7.</td>
+      <td>Kyimyindaing</td>
+      <td>1,174</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>Tarmwe</td>
+      <td>1,155</td>
+    </tr>
+    <tr>
+    <td>9.</td>
+      <td>Hlaing</td>
+      <td>1,127</td>
+    </tr>
+    <tr>
+      <td>10.</td>
+      <td>Shwe Pyi Thar</td>
+      <td>1,112</td>
+    </tr>
+    <tr>
+      <td>11.</td>
+      <td>South Okkalar</td>
+      <td>1,068</td>
+    </tr>
+    <tr>
+      <td>12.</td>
+      <td>Thanlyin</td>
+      <td>987</td>
+    </tr>
+    <tr>
+      <td>13.</td>
+      <td>Mingalar Taung Nyunt</td>
+      <td>923</td>
+    </tr>
+    <tr>
+      <td>14.</td>
+      <td>Dala</td>
+      <td>913</td>
+    </tr>
+    <tr>
+    <td>15.</td>
+      <td>Kamayut</td>
+      <td>890</td>
+    </tr>
+    
+    
+      
+
+    <!-- <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+ -->  </tbody>
+</table>
+        </div>
+        
+    </div>
+
+    </div>
+        </div>
+        <div class="clearfix"></div>
+                 <center><p class="dev">&copy;2020 Covid-19 Info | All Rights Reserved 
+                  <!-- <br>Share this website <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:20px;color:blue;
+    letter-spacing: 8px;"></i></a>
+                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 20px;
+    color: blue;
+    margin-left: 22px;
+    letter-spacing: 8px;
+}"></i></a>  -->       <br>Developed by <a href="https://minkhantkyaw-web.netlify.app/">Min Khant Kyaw</a>
+
+                   </p></center>
+        <!-- Footer -->
+    <script type="text/javascript" src="https://covid-19.te4m.org/fd_bootstrap/js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="https://covid-19.te4m.org/fd_bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://covid-19.te4m.org/fd_bootstrap/js/popper.min.js"></script>
+
+<script type="text/javascript" src="https://covid-19.te4m.org/plugins/axios/axios.min.js"></script>
+<script src="https://covid-19.te4m.org/plugins/vue/dist/vue_2.js"></script>
+
+
+
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script type="text/javascript">
+        var xAxisCatEnco = JSON.parse(`["Oct 10", "Oct 11", "Oct 12", "Oct 13", "Oct 14", "Oct 16", "Oct 17", "Oct 18", "Oct 19", "Oct 20", "Oct 21", "Oct 22"]`);
+        var dataEnco = JSON.parse(`[946,1010,1142,975,1294,987,1252,1400,1012,1461,2158,1906,1344,1123,888,1025]`);
+        Highcharts.chart('daily_analytics_chart', {
+            chart: {
+                zoomType: 'x'
+            },
+            title: {
+                text:  "မြန်မာတစ်ပြည်လုံးအတွက် ကူးစက်မှုနှုန်း (33488 ဦး)",
+            },
+            subtitle: {
+                text: document.ontouchstart === undefined ?
+                    'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+            },
+            xAxis: {
+                categories: xAxisCatEnco
+            },
+            credits: {
+                enabled: false
+            },
+
+            yAxis: {
+                title: {
+                    text: 'ကူးစက်မှုဦးရေ'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.getOptions().colors[0]],
+                            [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                        ]
+                    },
+
+                    marker: {
+                        radius: 2
+                    },
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            },
+            series: [{
+                type:'area',
+                name: 'COVID-19 Daily Analytics',
+                data: dataEnco
+            }, ]
+        });
+        Highcharts.chart('daily_analytics_chart', {
+  chart: {
+    type: 'area'
+  },
+  title: {
+    text: 'Covid-19 Tests per Day'
+  },
+  xAxis: {
+    categories: ['Oct 10', 'Oct 11', 'Oct 12', 'Oct 13', 'Oct 14','Oct 15','Oct 16', 'Oct 17', 'Oct 18', 'Oct 19', 'Oct 20', 'Oct 21', 'Oct 22','Oct 23', 'Oct 24']
+  },
+  credits: {
+    enabled: false
+  },
+  series: [{
+    name: 'Tests per day',
+    data: [16312,14809,14707,13258,9656,12975,13510,19736,12307,19103,15329,14362,13774,13699,14230,11692],
+    color: "black"
+  }]
+});
+        Highcharts.chart('daily_analytics_chart1', {
+            chart: {
+                zoomType: 'x'
+            },
+            title: {
+                text:  "မြန်မာတစ်ပြည်လုံးအတွက် ကူးစက်မှုနှုန်း (33488 ဦး)",
+            },
+            subtitle: {
+                text: document.ontouchstart === undefined ?
+                    'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+            },
+            xAxis: {
+                categories: xAxisCatEnco
+            },
+            credits: {
+                enabled: false
+            },
+
+            yAxis: {
+                title: {
+                    text: 'ကူးစက်မှုဦးရေ'
+                }
+            },
+            legend: {
+                enabled: false
+            },
+            plotOptions: {
+                area: {
+                    fillColor: {
+                        linearGradient: {
+                            x1: 0,
+                            y1: 0,
+                            x2: 0,
+                            y2: 1
+                        },
+                        stops: [
+                            [0, Highcharts.getOptions().colors[0]],
+                            [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                        ]
+                    },
+
+                    marker: {
+                        radius: 2
+                    },
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            lineWidth: 1
+                        }
+                    },
+                    threshold: null
+                }
+            },
+            series: [{
+                type:'area',
+                name: 'COVID-19 Daily Analytics',
+                data: dataEnco
+            }, ]
+        });
+        Highcharts.chart('daily_analytics_chart1', {
+  chart: {
+    type: 'area'
+  },
+  title: {
+    text: 'Covid-19 Cases per Day'
+  },
+  xAxis: {
+    categories: ['Oct 10', 'Oct 11', 'Oct 12', 'Oct 13', 'Oct 14', 'Oct 15', 'Oct 16', 'Oct 17', 'Oct 18', 'Oct 19', 'Oct 20', 'Oct 21', 'Oct 22','Oct 23', 'Oct 24']
+  },
+  credits: {
+    enabled: false
+  },
+  series: [{
+    name: 'Confirmed Cases',
+    data: [2158,1910,1344,1123,888,1026,1138,1387,1150,1180,1306,1194,1312,1361,1423,986]
+  }, {
+    name: 'Recovered Cases',
+    data: [312,2692,518,1509,2097,840,771,893,706,492,579,718,2279,1301,1254,1212],
+    color: "#66a832"
+
+  }, {
+    name: 'Death Toll',
+    data: [32,48,18,29,39,33,34,39,42,34,31,27,33,33,28,29],
+    color: "red"
+  }]
+});
+//          Highcharts.chart('daily_analytics_chart2', {
+//             chart: {
+//                 zoomType: 'x'
+//             },
+//             title: {
+//                 text:  "မြန်မာတစ်ပြည်လုံးအတွက် ကူးစက်မှုနှုန်း (33488 ဦး)",
+//             },
+//             subtitle: {
+//                 text: document.ontouchstart === undefined ?
+//                     'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+//             },
+//             xAxis: {
+//                 categories: xAxisCatEnco
+//             },
+//             credits: {
+//                 enabled: false
+//             },
+
+//             yAxis: {
+//                 title: {
+//                     text: 'ကူးစက်မှုဦးရေ'
+//                 }
+//             },
+//             legend: {
+//                 enabled: false
+//             },
+//             plotOptions: {
+//                 area: {
+//                     fillColor: {
+//                         linearGradient: {
+//                             x1: 0,
+//                             y1: 0,
+//                             x2: 0,
+//                             y2: 1
+//                         },
+//                         stops: [
+//                             [0, Highcharts.getOptions().colors[0]],
+//                             [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+//                         ]
+//                     },
+
+//                     marker: {
+//                         radius: 2
+//                     },
+//                     lineWidth: 1,
+//                     states: {
+//                         hover: {
+//                             lineWidth: 1
+//                         }
+//                     },
+//                     threshold: null
+//                 }
+//             },
+//             series: [{
+//                 type:'area',
+//                 name: 'COVID-19 Daily Analytics',
+//                 data: dataEnco
+//             }, ]
+//         });
+//          Highcharts.chart('daily_analytics_chart2', {
+//   chart: {
+//     plotBackgroundColor: null,
+//     plotBorderWidth: null,
+//     plotShadow: false,
+//     type: 'pie'
+//   },
+//   title: {
+//     text: 'Covid-19 Cases in Piechart'
+//   },
+//   tooltip: {
+//     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+//   },
+//   accessibility: {
+//     point: {
+//       valueSuffix: '%',
+//     }
+//   },
+//   plotOptions: {
+//     pie: {
+//       allowPointSelect: true,
+//       cursor: 'pointer',
+//       dataLabels: {
+//         enabled: true
+//       },
+//       showInLegend: true
+//     }
+//   },
+//   series: [{
+//     name: 'Covid-19 Data',
+//     colorByPoint: true,
+//     data: [{
+//       name: 'Confirmed Cases',
+//       y: 39696,
+//       sliced: true,
+//       selected: true,
+//       color: "#007bff"
+//     }, {
+//       name: 'Recovered Cases',
+//       y: 18865,
+//       color: "green"
+//     }, {
+//       name: 'Death Toll',
+//       y: 972,
+//       color: "red"
+//     }]
+//   }]
+// });
+//          Highcharts.chart('daily_analytics_chart3', {
+//             chart: {
+//                 zoomType: 'x'
+//             },
+//             title: {
+//                 text:  "မြန်မာတစ်ပြည်လုံးအတွက် ကူးစက်မှုနှုန်း (33488 ဦး)",
+//             },
+//             subtitle: {
+//                 text: document.ontouchstart === undefined ?
+//                     'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
+//             },
+//             xAxis: {
+//                 categories: xAxisCatEnco
+//             },
+//             credits: {
+//                 enabled: false
+//             },
+
+//             yAxis: {
+//                 title: {
+//                     text: 'ကူးစက်မှုဦးရေ'
+//                 }
+//             },
+//             legend: {
+//                 enabled: false
+//             },
+//             plotOptions: {
+//                 area: {
+//                     fillColor: {
+//                         linearGradient: {
+//                             x1: 0,
+//                             y1: 0,
+//                             x2: 0,
+//                             y2: 1
+//                         },
+//                         stops: [
+//                             [0, Highcharts.getOptions().colors[0]],
+//                             [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+//                         ]
+//                     },
+
+//                     marker: {
+//                         radius: 2
+//                     },
+//                     lineWidth: 1,
+//                     states: {
+//                         hover: {
+//                             lineWidth: 1
+//                         }
+//                     },
+//                     threshold: null
+//                 }
+//             },
+//             series: [{
+//                 type:'area',
+//                 name: 'COVID-19 Daily Analytics',
+//                 data: dataEnco
+//             }, ]
+//         });
+//          Highcharts.chart('daily_analytics_chart3', {
+//   chart: {
+//     type: 'bar'
+//   },
+//   title: {
+//     text: 'Confirmed Cases by Region'
+//   },
+//   // subtitle: {
+//   //   text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
+//   // },
+//   xAxis: {
+//     categories: ['Yangon', 'Rhakine', 'Bago', 'Mandalay', 'Ayeyarwaddy',],
+//     title: {
+//       text: null
+//     }
+//   },
+//   yAxis: {
+//     min: 0,
+//     title: {
+//       // text: 'Covid-19 caes by Division/State',
+//       align: 'high'
+//     },
+//     labels: {
+//       overflow: 'justify'
+//     }
+//   },
+//   tooltip: {
+//     valueSuffix: ''
+//   },
+//   plotOptions: {
+//     bar: {
+//       dataLabels: {
+//         enabled: true
+//       }
+//     }
+//   },
+//   // legend: {
+//   //   layout: 'vertical',
+//   //   align: 'right',
+//   //   verticalAlign: 'top',
+//   //   x: -40,
+//   //   y: 80,
+//   //   floating: true,
+//   //   borderWidth: 1,
+//   //   backgroundColor:
+//   //     Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+//   //   shadow: true
+//   // },                
+//   credits: {
+//     enabled: false
+//   },
+//   series: [{
+//     name: 'Confirmed Cases',
+//     data: [31019,2652,1785,1295,782]
+//   }]
+// });
+
+
+
+
+    </script>
+
+</div>
+</div>
+
+
+
+
+
+        <!-- Footer -->
+ 
+        
+
+    
+</body>
+</html>
