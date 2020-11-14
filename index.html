@@ -2,16 +2,16 @@
 <html>
 <head>
     <title>Covid-19 Info</title>
-    <link rel="shortcut icon" href="images1/logo1.png">
+    <link rel="shortcut icon" href="images1/si2.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://covid-19.te4m.org/fd_bootstrap/css/fluent.css">
-<link rel="stylesheet" href="https://covid-19.te4m.org/fd_bootstrap/css/micon.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <meta property="og:url"           content="https://covid-19infoweb.netlify.app/" />
 <meta property="og:type"          content="website" />
 <meta property="og:title"         content="Covid-19 Info" />
@@ -37,8 +37,23 @@
 .dev a:hover{
   color: #000000;
 }
+nav{
+  padding: .5rem 1rem;
+}
+nav.navbar.shrink{
+  padding: 0 1rem;
+}
 
 </style>
+<script>
+  $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+  </script>
 </head>
 <body>
 
@@ -47,7 +62,7 @@
 <div id="fb-root"></div>
 <nav class="navbar  fixed-top navbar-expand-lg navbar-fixed-top navbar-light bg-light"style="background-color: #e3f2fd!important; ">
   <a class="navbar-brand" href="#">
-    <img src="images1/logo1.png" alt="">
+    <img src="images1/sl.png" alt="">
      <!-- <img src="images1/icon1.png" alt=""> -->
 
     Covid-19 Info
@@ -64,10 +79,7 @@
       <li class="nav-item">
         <a class="nav-link" href="#"></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          
-        </a>
+
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
@@ -82,7 +94,8 @@
             <ul class="navbar-nav">
             <li class="nav-item ">
                 <div class="flex-center">
-                   <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:20px;color:blue;
+                   <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic">
+                    <i class="fab fa-facebook-square" style="font-size:20px;color:blue;
     letter-spacing: 8px;"></i>Share to Facebook</a>
 
 <!--                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid19infoweb.netlify.app" target="_blank" class="fb-ic">
@@ -126,8 +139,9 @@
             <div class="col-md-12 col-sm-12" style="    margin-top: 88px;
     font-weight: bold;
     font-size: 18px;
-    text-shadow: 0 0 black;
-    color: #673AB7;">
+    color: #3F51B5;
+    font-family: sans-serif;
+}">
               Covid-19 Situations in Myanmar
             </div>
           </div>
@@ -135,7 +149,7 @@
             <div class="col-md-12 col-sm-12">
               <hr style="margin-bottom: 10px;"color="orange">
  <marquee bgcolor="orange"> 
-  <div class="running" style="font-size: 22px;color: #fff">Last Updated on 25th Oct 8PM:<q>*Myanmar currently has +11,692 lab tests, +986 confirmed cases, +1,212 recovered cases, and +29 deaths.</q><div>
+  <div class="running" style="font-size: 22px;color: #fff;font-weight: 555;font-family: sans-serif;">Last Updated on 9th Nov 8PM:<q>*Myanmar currently has +9,230 lab tests, +598 confirmed cases, +905 recovered cases, and +17 deaths.</q><div>
     </marquee>
  <hr style=" margin-top: 4px;" color="orange">
             </div>
@@ -148,7 +162,7 @@
   <div class="card-body">
     <h5 class="card-title">Total Lab Tests</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #dad4d4;">605,843</p>
+    font-weight: bold; color: #dad4d4;">804,163</p>
   </div>
 </div>
 </div>
@@ -157,7 +171,7 @@
   <div class="card-body">
     <h5 class="card-title">Confirmed Cases</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #dad4d4;">44,774</p>
+    font-weight: bold; color: #dad4d4;">61,975</p>
   </div>
 </div>
   </div>
@@ -166,7 +180,7 @@
   <div class="card-body">
     <h5 class="card-title">Recovered Cases</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #dad4d4;">24,920</p>
+    font-weight: bold; color: #dad4d4;">46,661</p>
   </div>
 </div>
 </div>
@@ -176,7 +190,7 @@
   <div class="card-body">
     <h5 class="card-title">Death Toll</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #dad4d4;">1,095</p>
+    font-weight: bold; color: #dad4d4;">1,437</p>
   </div>
 </div>
  </div>
@@ -440,7 +454,7 @@
         </div>
         <div class="clearfix"></div>
                  <center><p class="dev">&copy;2020 Covid-19 Info | All Rights Reserved 
-                  <!-- <br>Share this website <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:20px;color:blue;
+                  <!-- <br>Share <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:20px;color:blue;
     letter-spacing: 8px;"></i></a>
                    <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 20px;
     color: blue;
@@ -543,7 +557,7 @@
   },
   series: [{
     name: 'Tests per day',
-    data: [16312,14809,14707,13258,9656,12975,13510,19736,12307,19103,15329,14362,13774,13699,14230,11692],
+    data: [16312,14809,14707,13258,9656,12975,13510,19736,12307,19103,15329,14362,13774,13699,14230],
     color: "black"
   }]
 });
@@ -621,240 +635,19 @@
   },
   series: [{
     name: 'Confirmed Cases',
-    data: [2158,1910,1344,1123,888,1026,1138,1387,1150,1180,1306,1194,1312,1361,1423,986]
+    data: [2158,1910,1344,1123,888,1026,1138,1387,1150,1180,1306,1194,1312,1361,1423]
   }, {
     name: 'Recovered Cases',
-    data: [312,2692,518,1509,2097,840,771,893,706,492,579,718,2279,1301,1254,1212],
+    data: [312,2692,518,1509,2097,840,771,893,706,492,579,718,2279,1301,1254],
     color: "#66a832"
 
   }, {
     name: 'Death Toll',
-    data: [32,48,18,29,39,33,34,39,42,34,31,27,33,33,28,29],
+    data: [32,48,18,29,39,33,34,39,42,34,31,27,33,33,28],
     color: "red"
   }]
 });
-//          Highcharts.chart('daily_analytics_chart2', {
-//             chart: {
-//                 zoomType: 'x'
-//             },
-//             title: {
-//                 text:  "မြန်မာတစ်ပြည်လုံးအတွက် ကူးစက်မှုနှုန်း (33488 ဦး)",
-//             },
-//             subtitle: {
-//                 text: document.ontouchstart === undefined ?
-//                     'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
-//             },
-//             xAxis: {
-//                 categories: xAxisCatEnco
-//             },
-//             credits: {
-//                 enabled: false
-//             },
-
-//             yAxis: {
-//                 title: {
-//                     text: 'ကူးစက်မှုဦးရေ'
-//                 }
-//             },
-//             legend: {
-//                 enabled: false
-//             },
-//             plotOptions: {
-//                 area: {
-//                     fillColor: {
-//                         linearGradient: {
-//                             x1: 0,
-//                             y1: 0,
-//                             x2: 0,
-//                             y2: 1
-//                         },
-//                         stops: [
-//                             [0, Highcharts.getOptions().colors[0]],
-//                             [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
-//                         ]
-//                     },
-
-//                     marker: {
-//                         radius: 2
-//                     },
-//                     lineWidth: 1,
-//                     states: {
-//                         hover: {
-//                             lineWidth: 1
-//                         }
-//                     },
-//                     threshold: null
-//                 }
-//             },
-//             series: [{
-//                 type:'area',
-//                 name: 'COVID-19 Daily Analytics',
-//                 data: dataEnco
-//             }, ]
-//         });
-//          Highcharts.chart('daily_analytics_chart2', {
-//   chart: {
-//     plotBackgroundColor: null,
-//     plotBorderWidth: null,
-//     plotShadow: false,
-//     type: 'pie'
-//   },
-//   title: {
-//     text: 'Covid-19 Cases in Piechart'
-//   },
-//   tooltip: {
-//     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-//   },
-//   accessibility: {
-//     point: {
-//       valueSuffix: '%',
-//     }
-//   },
-//   plotOptions: {
-//     pie: {
-//       allowPointSelect: true,
-//       cursor: 'pointer',
-//       dataLabels: {
-//         enabled: true
-//       },
-//       showInLegend: true
-//     }
-//   },
-//   series: [{
-//     name: 'Covid-19 Data',
-//     colorByPoint: true,
-//     data: [{
-//       name: 'Confirmed Cases',
-//       y: 39696,
-//       sliced: true,
-//       selected: true,
-//       color: "#007bff"
-//     }, {
-//       name: 'Recovered Cases',
-//       y: 18865,
-//       color: "green"
-//     }, {
-//       name: 'Death Toll',
-//       y: 972,
-//       color: "red"
-//     }]
-//   }]
-// });
-//          Highcharts.chart('daily_analytics_chart3', {
-//             chart: {
-//                 zoomType: 'x'
-//             },
-//             title: {
-//                 text:  "မြန်မာတစ်ပြည်လုံးအတွက် ကူးစက်မှုနှုန်း (33488 ဦး)",
-//             },
-//             subtitle: {
-//                 text: document.ontouchstart === undefined ?
-//                     'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
-//             },
-//             xAxis: {
-//                 categories: xAxisCatEnco
-//             },
-//             credits: {
-//                 enabled: false
-//             },
-
-//             yAxis: {
-//                 title: {
-//                     text: 'ကူးစက်မှုဦးရေ'
-//                 }
-//             },
-//             legend: {
-//                 enabled: false
-//             },
-//             plotOptions: {
-//                 area: {
-//                     fillColor: {
-//                         linearGradient: {
-//                             x1: 0,
-//                             y1: 0,
-//                             x2: 0,
-//                             y2: 1
-//                         },
-//                         stops: [
-//                             [0, Highcharts.getOptions().colors[0]],
-//                             [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
-//                         ]
-//                     },
-
-//                     marker: {
-//                         radius: 2
-//                     },
-//                     lineWidth: 1,
-//                     states: {
-//                         hover: {
-//                             lineWidth: 1
-//                         }
-//                     },
-//                     threshold: null
-//                 }
-//             },
-//             series: [{
-//                 type:'area',
-//                 name: 'COVID-19 Daily Analytics',
-//                 data: dataEnco
-//             }, ]
-//         });
-//          Highcharts.chart('daily_analytics_chart3', {
-//   chart: {
-//     type: 'bar'
-//   },
-//   title: {
-//     text: 'Confirmed Cases by Region'
-//   },
-//   // subtitle: {
-//   //   text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population">Wikipedia.org</a>'
-//   // },
-//   xAxis: {
-//     categories: ['Yangon', 'Rhakine', 'Bago', 'Mandalay', 'Ayeyarwaddy',],
-//     title: {
-//       text: null
-//     }
-//   },
-//   yAxis: {
-//     min: 0,
-//     title: {
-//       // text: 'Covid-19 caes by Division/State',
-//       align: 'high'
-//     },
-//     labels: {
-//       overflow: 'justify'
-//     }
-//   },
-//   tooltip: {
-//     valueSuffix: ''
-//   },
-//   plotOptions: {
-//     bar: {
-//       dataLabels: {
-//         enabled: true
-//       }
-//     }
-//   },
-//   // legend: {
-//   //   layout: 'vertical',
-//   //   align: 'right',
-//   //   verticalAlign: 'top',
-//   //   x: -40,
-//   //   y: 80,
-//   //   floating: true,
-//   //   borderWidth: 1,
-//   //   backgroundColor:
-//   //     Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-//   //   shadow: true
-//   // },                
-//   credits: {
-//     enabled: false
-//   },
-//   series: [{
-//     name: 'Confirmed Cases',
-//     data: [31019,2652,1785,1295,782]
-//   }]
-// });
+//
 
 
 
