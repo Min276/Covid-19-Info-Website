@@ -16,7 +16,7 @@
 <meta property="og:type"          content="website" />
 <meta property="og:title"         content="Covid-19 Info" />
 <meta property="og:description"   content="Covid Information Sharing Platform" />
-<meta property="og:image"         content="https://covid-19infoweb.netlify.app/images1/icon.jpg" />
+<meta property="og:image"         content="https://covid-19infoweb.netlify.app/images1/icon.png" />
 <meta name="google-site-verification" content="tFS9qQuGOGx0IR6XdEdCP4OERbnSGeD8Bj-82RiFiCE" />
 
 <style type="text/css">
@@ -67,6 +67,11 @@ nav.navbar.shrink{
  a:hover{
    text-decoration: none;
  }
+  @font-face {
+font-family:'Unicode';
+src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') format('woff'), url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.ttf') format('ttf');
+}
+
 </style>
 <script>
   $(window).scroll(function() {
@@ -90,9 +95,9 @@ nav.navbar.shrink{
 
     Covid-19 Info
   </a>
- <!--  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button> -->
+  </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -100,9 +105,14 @@ nav.navbar.shrink{
         <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"></a>
+        <a class="nav-link" href="index.html" style="color: #2196f3;font-size: 17px;
+    margin-top: -2px;
+">Eng Version</a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #000000
+">မြန်မာဗားရှင်း</a>
+      </li>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
@@ -110,15 +120,16 @@ nav.navbar.shrink{
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
+      
       <li class="nav-item">
         <a class="nav-link disabled" href="#"></a>
       </li>
     </ul>
             <ul class="navbar-nav">
             <li class="nav-item ">
-                <div class="flex-center">
+                <div class="flex-center" style="margin-top: -1px;">
                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic">
-                    <i class="fab fa-facebook-square" style="font-size:20px;color:blue;
+                    <i class="fab fa-facebook-square" style="font-size:22px;color:blue;
     letter-spacing: 8px;"></i>Share to Facebook</a>
 
 
@@ -128,7 +139,7 @@ nav.navbar.shrink{
                 <div class="flex-center">
                  
                     
-                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 20px;
+                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 21px;
     color: blue;
     margin-left: 22px;
     letter-spacing: 8px;
@@ -142,6 +153,16 @@ nav.navbar.shrink{
     <!--
  -->  </div>
 </nav>
+<style>
+   .nav-item a:hover{
+    color: red!important;
+   }
+   @media (max-width: 994px){
+    .flex-center{
+      display: none;
+    }
+   }
+  </style>
 
 
                 <div class="main-content" style="background:#add4e6">
@@ -165,7 +186,7 @@ nav.navbar.shrink{
             <div class="col-md-12 col-sm-12">
               <hr style="margin-bottom: 10px;"color="orange">
  <marquee bgcolor="orange"> 
-  <div class="running" style="font-size: 22px;color: #fff;font-family: sans-serif;">Last Updated on 14th Nov 8PM:<q>*Myanmar currently has +14,777 lab tests, +1,277 confirmed cases, +1,026 recovered cases, and +18 deaths.</q><div>
+  <div class="running" style="font-size: 22px;color: #fff;font-family: sans-serif;">Last Updated on 19th Nov 8PM:<q>*Myanmar currently has +17,954 lab tests, +1,560 confirmed cases, +869 recovered cases, and +26 deaths.</q><div>
     </marquee>
  <hr style=" margin-top: 4px;" color="orange">
             </div>
@@ -186,7 +207,7 @@ nav.navbar.shrink{
   <div class="card-body">
     <h5 class="card-title">Total Lab Tests</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">884,005</p>
+    font-weight: bold; color: #ffffff;">969,268</p>
   </div>
 </div>
 </div>
@@ -195,7 +216,7 @@ nav.navbar.shrink{
   <div class="card-body">
     <h5 class="card-title">Confirmed Cases</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">68,011</p>
+    font-weight: bold; color: #ffffff;">74,882</p>
   </div>
 </div>
   </div>
@@ -204,7 +225,7 @@ nav.navbar.shrink{
   <div class="card-body">
     <h5 class="card-title">Recovered Cases</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">51,362</p>
+    font-weight: bold; color: #ffffff;">55,633</p>
   </div>
 </div>
 </div>
@@ -214,7 +235,7 @@ nav.navbar.shrink{
   <div class="card-body">
     <h5 class="card-title">Death Toll</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">1,534</p>
+    font-weight: bold; color: #ffffff;">1,676</p>
   </div>
 </div>
  </div>
@@ -222,6 +243,8 @@ nav.navbar.shrink{
 </section>
 </center>
 <br>
+
+
 <section>
   
 <div class="row">
@@ -242,6 +265,7 @@ nav.navbar.shrink{
 
             </div>
         </section>
+        
   
     <div class="row">
       <div class="col-md-6 col-sm-12">
@@ -371,52 +395,52 @@ nav.navbar.shrink{
       <tr>
       <td>1.</td>
       <td>North Okkalar</td>
-      <td>3,645</td>
+      <td>3,910</td>
     </tr>
     <tr>
       <td>2.</td>
       <td>Mingalardon</td>
-      <td>3,417</td>
+      <td>3,726</td>
     </tr>
     <tr>
       <td>3.</td>
       <td>Hlaing Thar Yar</td>
-      <td>3,229</td>
+      <td>3,486</td>
     </tr>
     <tr>
       <td>4.</td>
       <td>Thingangyun</td>
-      <td>2,902</td>
+      <td>3,074</td>
     </tr>
     <tr>
       <td>5.</td>
       <td>Insein</td>
-      <td>2,805</td>
+      <td>3,027</td>
     </tr>
     <tr>
       <td>6.</td>
       <td>Mayangone</td>
-      <td>2,146</td>
+      <td>2,243</td>
     </tr>
       <tr>
       <td>7.</td>
-      <td>Hlaing</td>
-      <td>1,951</td>
+      <td>ShwePyiThar</td>
+      <td>2,121</td>
     </tr>
     <tr>
       <td>8.</td>
-      <td>ShwePyiThar</td>
-      <td>1,868</td>
+      <td>Hlaing</td>
+      <td>2,116</td>
     </tr>
     <tr>
     <td>9.</td>
-      <td>Thanlyin</td>
-      <td>1,819</td>
+      <td>Tamwe</td>
+      <td>1,995</td>
     </tr>
     <tr>
       <td>10.</td>
-      <td>Tamwe</td>
-      <td>1,780</td>
+      <td>Thanlyin</td>
+      <td>1,985</td>
     </tr>
     <tr>
       <td>11.</td>
@@ -455,19 +479,26 @@ nav.navbar.shrink{
  -->  </tbody>
 </table>
         </div>
+        
         <div class="col-md-12 col-sm-12">
-         <div class="alert alert-warning alert-dismissible fade show" role="alert" style="text-align: center;margin-top: -5px;
-    margin-bottom: 25px;
-}">
-            <strong>Share this Website:  <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:20px;color:blue;margin-left:7px;"></i></a> 
-                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger"style="font-size:20px;color:blue;margin-left: 6px"></i></a>
+         <div class="alert alert-warning alert-dismissible fade show" id="share" role="alert" style="text-align: center;margin-top: -5px;
+    margin-bottom: 25px;">
+  <style>
+    @media (min-width: 995px) and (max-width: 1500px){
+  #share {
+    display: none;
+  }
+  }
+  </style>
+            <strong>Share this Website:  <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:23px;color:blue;margin-left:4px;"></i></a> 
+                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger"style="font-size:22px;color:blue;margin-left: 6px"></i></a>
 </strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
         </div>
-
+       
     </div>
      
     </div>
@@ -678,14 +709,7 @@ nav.navbar.shrink{
 
 </div>
 </div>
-
-
-
-
-
-        <!-- Footer -->
  
-        
 
     
 </body>
