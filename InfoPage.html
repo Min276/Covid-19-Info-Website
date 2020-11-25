@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/icon1.png"/>
-<meta property="og:description" style="font-family:Unicode;" content="နို၀င်ဘာ ၂၃ ရက်၊ ည ၈:၀၀" />
+<meta property="og:description" style="font-family:Unicode;" content="နို၀င်ဘာ ၂၅ ရက်၊ ည ၈:၀၀" />
 <meta property="og:title" style="font-family:Unicode;" content="မြန်မာနိုင်ငံတွင်ကိုဗစ်ဖြစ်ပွားနေမှုအခြေအနေ" />
 <meta property="og:url" content="https://covid-19infoweb.netlify.app/" />
 <meta property="og:type"          content="informative website" />
@@ -71,6 +71,19 @@ nav.navbar.shrink{
  a:hover{
    text-decoration: none;
  }
+ /*img:hover {
+transform: scale(1.1);
+}*/
+img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+img:hover  {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
 </style>
 <script>
   $(window).scroll(function() {
@@ -195,7 +208,7 @@ nav.navbar.shrink{
             <div class="col-md-12 col-sm-12">
               <hr style="margin-bottom: 10px;"color="#3F51B5">
  <marquee bgcolor="#3F51B5"> 
-  <div class="running" style='font-family:Unicode;font-size: 20px; color: #FFFFFF; font-weight: 600px'> ကျန်းမာရေးနှင့်အားကစားဝန်ကြီးဌာန၏ နို၀င်ဘာ ၂၃ ရက်၊ ည ၈:၀၀ တွင် ထုတ်ပြန်သောသတင်းအရ မြန်မာနိုင်ငံတွင် စစ်ဆေးပြီးသည့်ဓာတ်ခွဲနမူနာစုစုပေါင်း ၁,၀၃၇,၄၅၀ ဦး၊ ဓာတ်ခွဲအတည်ပြုလူနာစုစုပေါင်း ၈၀,၅၀၅ ဦး၊ ပြန်လည်ကောင်းမွန်လာသူစုစုပေါင်း ၅၉,၈၈၈ ဦး၊ နှင့် သေဆုံးလူနာစုစုပေါင်း ၁,၇၆၅ ဦး ရှိပါသည်။ ။<div>
+  <div class="running" style='font-family:Unicode;font-size: 20px; color: #FFFFFF; font-weight: 600px'> ကျန်းမာရေးနှင့်အားကစားဝန်ကြီးဌာန၏ နို၀င်ဘာ ၂၅ ရက်၊ ည ၈:၀၀ တွင် ထုတ်ပြန်သောသတင်းအရ မြန်မာနိုင်ငံတွင် စစ်ဆေးပြီးသည့်ဓာတ်ခွဲနမူနာစုစုပေါင်း ၁,၀၇၆,၃၈၂ ဦး၊ ဓာတ်ခွဲအတည်ပြုလူနာစုစုပေါင်း ၈၃,၅၆၆ ဦး၊ ပြန်လည်ကောင်းမွန်လာသူစုစုပေါင်း ၆၃,၃၆၆ ဦး၊ နှင့် သေဆုံးလူနာစုစုပေါင်း ၁,၈၁၀ ဦး ရှိပါသည်။ ။<div>
     </marquee>
  <hr style=" margin-top: 4px;" color="#3F51B5">
             </div>
@@ -215,7 +228,7 @@ nav.navbar.shrink{
    <div class="card">
     <!-- <div class="shadow-sm pt-1 pb-2 mb-5 bg-white rounded"> -->
     
-    <img class="info" src="images1/info1.png">
+    <img class="info" id="zoomOut" src="images1/info1.png">
     <center><div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/info1.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div></center>
 
    </div>
