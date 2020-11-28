@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>Covid-19 Info(>>Map)</title>
-    <link rel="shortcut icon" href="images1/si2.png">
+    <link rel="shortcut icon" href="images1/shortcut_icon.png">
 <meta name="viewport" content="width=device-width, initial-scale =1">
 <style id="antiClickjack">
     body{display:none !important;}
 </style>
-<script type="text/javascript">
+<script>
     if (self === top) {
         var antiClickjack = document.getElementById("antiClickjack");
         antiClickjack.parentNode.removeChild(antiClickjack);
@@ -27,8 +27,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/icon1.png" />
-<meta property="og:description" content="Nov 27, 8:00 PM" />
-<meta property="og:title" content="Covid-19 Info in Myanmar" />
+<meta property="og:description" content="This is the data related to Covid in Myanmar" />
+<meta property="og:title" content="COVID-19 Info in Myanmar" />
 <meta property="og:url" content="https://covid-19infoweb.netlify.app/" />
 <meta property="og:type"          content="informative website" />
 <meta name="google-site-verification" content="tFS9qQuGOGx0IR6XdEdCP4OERbnSGeD8Bj-82RiFiCE" />
@@ -42,6 +42,9 @@
 });
   </script>
   <style>
+    body{
+        text-align: center;
+    }
    
 nav{
   padding: .5rem 1rem;
@@ -78,19 +81,69 @@ nav.navbar.shrink{
 font-family:'Unicode';
 src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') format('woff'), url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.ttf') format('ttf');
 }
+.nav-item a:hover{
+    color: red!important;
+   }
+   @media (max-width: 994px){
+    .flex-center{
+      display: none;
+    }
+   }
+   .row{
+    margin-left: 0px;
+    margin-right: 0px;
+   }
+    @media (min-width: 995px) and (max-width: 1500px){
+  #share {
+    display: none;
+  }
+  }
+    .dev{
+    background: #2196F3;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.dev a{
+  color: #000000;
+  /*font-weight: bold;*/
+}
+.dev a:hover{
+  color: #000000;
+}
+.footer{
+    margin-left: -15px;
+    margin-right: -15px;
+
+
+}
+#container {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+        
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+.highcharts-color-0{
+    color: red;
+}
   </style>
 </head>
 <body>
-   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="HMLcQDtq"></script>
 
     <div id="wrapper" class="clearfix">
         <!-- Navbar -->
 <div id="fb-root"></div>
 <nav class="navbar  fixed-top navbar-expand-lg navbar-fixed-top navbar-light bg-light"style="background-color: #e3f2fd!important; ">
-  <a class="navbar-brand" href="#" style="font-weight: 500;">
-    <img src="images1/sl.png" alt="">
-     <!-- <img src="images1/icon1.png" alt=""> -->
+  <a class="navbar-brand" href="index.html" style="font-weight: 500;">
+    <img src="images1/main_logo.png" alt="main logo of this website">
 
     Covid-19 Info
   </a>
@@ -117,19 +170,19 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
     margin-top: -2px;
 ">Data in Map</a>
       </li>
-
+<li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
+     
       
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"></a>
-      </li>
-    </ul>
+      
             <ul class="navbar-nav">
             <li class="nav-item ">
                 <div class="flex-center" style="margin-top: -1px;">
@@ -144,7 +197,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
                 <div class="flex-center">
                  
                     
-                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 21px;
+                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app&redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 21px;
     color: blue;
     margin-left: 22px;
     letter-spacing: 8px;
@@ -158,25 +211,10 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
     <!--
  -->  </div>
 </nav>
-<style>
-   .nav-item a:hover{
-    color: red!important;
-   }
-   @media (max-width: 994px){
-    .flex-center{
-      display: none;
-    }
-   }
-   .row{
-    margin-left: 0px;
-    margin-right: 0px;
-   }
-
-  </style>
 
 
 <div id="container" style="margin-top: 90px;"></div>
-                            <center><div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/covid-19-situation-in-my.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div></center>
+                            <div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/covid-19-situation-in-my.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
 <div class="row">
     <div class="col-md-12 col-sm-12">
     <a href="index.html">
@@ -193,15 +231,9 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
 <div class="col-md-12 col-sm-12">
          <div class="alert alert-warning alert-dismissible fade show" id="share" role="alert" style="text-align: center;margin-top: -5px;
     margin-bottom: 25px;">
-  <style>
-    @media (min-width: 995px) and (max-width: 1500px){
-  #share {
-    display: none;
-  }
-  }
-  </style>
+ 
 <strong>Share this Website:  <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:23px;color:blue;margin-left:4px;"></i></a> 
-                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger"style="font-size:22px;color:blue;margin-left: 6px"></i></a>
+                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app&redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger"style="font-size:22px;color:blue;margin-left: 6px"></i></a>
 </strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -209,28 +241,6 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
         </div>
     </div>
 </div>
-<style>
-    .dev{
-    background: #2196F3;
-    font-weight: bold;
-    color: #FFFFFF;
-    margin-bottom: 0px;
-    font-size: 15px;
-}
-.dev a{
-  color: #000000;
-  /*font-weight: bold;*/
-}
-.dev a:hover{
-  color: #000000;
-}
-.footer{
-    margin-left: -15px;
-    margin-right: -15px;
-
-
-}
-</style>
 <div class="footer">
     <div class="col-md-12 col-sm-12">
 <center><p class="dev"> 
@@ -245,25 +255,6 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
                </div>
            </div>
    
-<style>
-#container {
-    height: 500px; 
-    min-width: 310px; 
-    max-width: 800px; 
-    margin: 0 auto; 
-        
-}
-.loading {
-    margin-top: 10em;
-    text-align: center;
-    color: gray;
-}
-.highcharts-color-0{
-    color: red;
-}
-</style>
-
-    
 
 <script>
 // Prepare demo data
