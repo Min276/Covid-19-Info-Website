@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Covid-19 Info(>>Map)</title>
+    <link rel="shortcut icon" href="images1/si2.png">
+<meta name="viewport" content="width=device-width, initial-scale =1">
+<style id="antiClickjack">
+    body{display:none !important;}
+</style>
+<script type="text/javascript">
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+</script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/mm/mm-all.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/icon1.png" />
+<meta property="og:description" content="Nov 27, 8:00 PM" />
+<meta property="og:title" content="Covid-19 Info in Myanmar" />
+<meta property="og:url" content="https://covid-19infoweb.netlify.app/" />
+<meta property="og:type"          content="informative website" />
+<meta name="google-site-verification" content="tFS9qQuGOGx0IR6XdEdCP4OERbnSGeD8Bj-82RiFiCE" />
+<script>
+  $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+  </script>
+  <style>
+   
+nav{
+  padding: .5rem 1rem;
+}
+nav.navbar.shrink{
+  padding: 0 1rem;
+}
+.bg-success{
+  background-color: #33A733!important;
+}
+.alert-warning {
+    color: #2196F3;
+    background-color: #fafafa;
+    border-color: #efeeea;
+    text-align: center;
+}
+.alert-dismissible .close {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    padding: .75rem 1.25rem;
+    color: inherit;
+}
+ 
+
+.alert-warning:hover{
+   color: #000000;
+   text-decoration: none;
+ }
+ a:hover{
+   text-decoration: none;
+ }
+  @font-face {
+font-family:'Unicode';
+src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') format('woff'), url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.ttf') format('ttf');
+}
+  </style>
+</head>
+<body>
+   <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="HMLcQDtq"></script>
+
+    <div id="wrapper" class="clearfix">
+        <!-- Navbar -->
+<div id="fb-root"></div>
+<nav class="navbar  fixed-top navbar-expand-lg navbar-fixed-top navbar-light bg-light"style="background-color: #e3f2fd!important; ">
+  <a class="navbar-brand" href="#" style="font-weight: 500;">
+    <img src="images1/sl.png" alt="">
+     <!-- <img src="images1/icon1.png" alt=""> -->
+
+    Covid-19 Info
+  </a>
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" style="color: #000000;font-size: 17px;
+    margin-top: -2px;
+">Eng Version</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #000000
+">မြန်မာဗားရှင်း</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="map.html" style="color: #2196f3;font-size: 17px;
+    margin-top: -2px;
+">Data in Map</a>
+      </li>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#"></a>
+      </li>
+    </ul>
+            <ul class="navbar-nav">
+            <li class="nav-item ">
+                <div class="flex-center" style="margin-top: -1px;">
+                   <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic">
+                    <i class="fab fa-facebook-square" style="font-size:22px;color:blue;
+    letter-spacing: 8px;"></i>Share to Facebook</a>
+
+
+                </div>
+            </li>
+            <li class="nav-item ">
+                <div class="flex-center">
+                 
+                    
+                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 21px;
+    color: blue;
+    margin-left: 22px;
+    letter-spacing: 8px;
+"></i>Share to Messenger</a>
+
+                   
+                </div>
+            </li>
+
+        </ul>
+    <!--
+ -->  </div>
+</nav>
+<style>
+   .nav-item a:hover{
+    color: red!important;
+   }
+   @media (max-width: 994px){
+    .flex-center{
+      display: none;
+    }
+   }
+   .row{
+    margin-left: 0px;
+    margin-right: 0px;
+   }
+
+  </style>
+
+
+<div id="container" style="margin-top: 90px;"></div>
+                            <center><div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/covid-19-situation-in-my.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div></center>
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+    <a href="index.html">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Back to Home <i class="fas fa-link" style="font-size: 17px"></i>Click here</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </a>
+      </div>
+  </div>
+<div class="row">
+<div class="col-md-12 col-sm-12">
+         <div class="alert alert-warning alert-dismissible fade show" id="share" role="alert" style="text-align: center;margin-top: -5px;
+    margin-bottom: 25px;">
+  <style>
+    @media (min-width: 995px) and (max-width: 1500px){
+  #share {
+    display: none;
+  }
+  }
+  </style>
+<strong>Share this Website:  <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:23px;color:blue;margin-left:4px;"></i></a> 
+                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger"style="font-size:22px;color:blue;margin-left: 6px"></i></a>
+</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+<style>
+    .dev{
+    background: #2196F3;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.dev a{
+  color: #000000;
+  /*font-weight: bold;*/
+}
+.dev a:hover{
+  color: #000000;
+}
+.footer{
+    margin-left: -15px;
+    margin-right: -15px;
+
+
+}
+</style>
+<div class="footer">
+    <div class="col-md-12 col-sm-12">
+<center><p class="dev"> 
+                  
+                   &copy;2020 Covid-19 Info | All Rights Reserved 
+              
+                                     
+                    <br>Developed by <a href="https://minkhantkyaw-web.netlify.app/">Min Khant Kyaw</a>
+
+
+                   </p></center>
+               </div>
+           </div>
+   
+<style>
+#container {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+        
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+.highcharts-color-0{
+    color: red;
+}
+</style>
+
+    
+
+<script>
+// Prepare demo data
+// Data is joined to map using value of 'hc-key' property by default.
+// See API docs for 'joinBy' for more info on linking data and map.
+var data = [
+    ['mm-tn', 351],
+    ['mm-5760', 385],
+    ['mm-mo', 1263],
+    ['mm-ra', 3556],
+    ['mm-ay', 2723],
+    ['mm-ch', 94],
+    ['mm-mg', 1435],
+    ['mm-sh', 304],
+    ['mm-kh', 15],
+    ['mm-kn', 604],
+    ['mm-kc', 196],
+    ['mm-sa', 791],
+    ['mm-ba', 4867],
+    ['mm-md', 5225],
+    ['mm-ya', 63396],
+
+];
+
+// Create the chart
+Highcharts.mapChart('container', {
+    chart: {
+        map: 'countries/mm/mm-all'
+    },
+
+    title: {
+        text: 'Covid-19 Situation in Myanmar'
+    },
+
+    subtitle: {
+        text: 'Source Map: <a href="http://code.highcharts.com/mapdata/countries/mm/mm-all.js">Myanmar</a>'
+    },
+
+    mapNavigation: {
+        enabled: true,
+        buttonOptions: {
+            verticalAlign: 'bottom'
+        }
+    },
+
+    colorAxis: {
+        min: 0,
+        stops: [
+                    [0, '#f4756c'],
+                    [0.5,'#ff1100' ],
+                    [1, '#9b0e04']
+                    
+                ]
+    },
+
+    series: [{
+        data: data,
+        name: 'Total confirmed Cases',
+        states: {
+            hover: {
+                color: '#607d8b'
+            }
+        },
+        dataLabels: {
+            enabled: false,
+            format: '{point.name}'
+        }
+    }]
+});
+</script>

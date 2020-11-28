@@ -4,6 +4,18 @@
     <title>Covid-19 Info(Eng Version)</title>
     <link rel="shortcut icon" href="images1/si2.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style id="antiClickjack">
+    body{display:none !important;}
+</style>
+<script type="text/javascript">
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+</script>
+
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -51,6 +63,7 @@ nav.navbar.shrink{
     color: #2196F3;
     background-color: #fafafa;
     border-color: #efeeea;
+    margin-bottom: 45px;
 }
 .alert-dismissible .close {
     position: absolute;
@@ -116,6 +129,11 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
         <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #000000
 ">မြန်မာဗားရှင်း</a>
       </li>
+            <li class="nav-item">
+        <a class="nav-link" href="map.html" style="color: #000000;font-size: 17px;
+    margin-top: -2px;
+">Data in Map</a>
+      </li>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
@@ -165,17 +183,18 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
       display: none;
     }
    }
+
   </style>
-
-
-                <div class="main-content" style="background:#add4e6">
+    
+              <div class="main-content" style="background:#add4e6">
                   
 
                 <div class="container">
-                  
+
         <center>
         <section>
           <div class="row">
+
             <div class="col-md-12 col-sm-12" style="    margin-top: 88px;
     font-weight: bold;
     font-size: 18px;
@@ -185,6 +204,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
               Covid-19 Situations in Myanmar
             </div>
           </div>
+          
           <div class="row">
             <div class="col-md-12 col-sm-12">
               <hr style="margin-bottom: 10px;"color="orange">
@@ -272,6 +292,23 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
             </div>
         </section>
         
+       
+    <div class="row">
+    <div class="col-md-12 col-sm-12">
+    <a style="text-align:center;"href="map.html">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <p><img src="images1/myanmar (2).png">
+              Click this to see Data in Map 
+              <img src="images1/myanmar (3).png">
+
+              <i class="fas fa-map-marked-alt" style="font-size: 27px"></i></p>
+            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+ -->          </div>
+        </a>
+      </div>
+    </div>
   
     <div class="row">
       <div class="col-md-6 col-sm-12">
@@ -713,11 +750,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
   }]
 });
 //
-
-
-
-
-    </script>
+        </script>
 
 </div>
 </div>

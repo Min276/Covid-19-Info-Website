@@ -4,6 +4,17 @@
     <title style="font-family:Unicode;">Covid-19 Info(မြန်မာဗားရှင်း)</title>
     <link rel="shortcut icon" href="images1/si2.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style id="antiClickjack">
+    body{display:none !important;}
+</style>
+<script type="text/javascript">
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+</script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -125,6 +136,11 @@ img:hover  {
       <li class="nav-item">
         <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #2196f3
 ">မြန်မာဗားရှင်း</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="map.html" style="color: #000000;font-size: 17px;
+    margin-top: -2px;
+">Data in Map</a>
       </li>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
@@ -256,6 +272,22 @@ img:hover  {
  </li>
 </ul>
  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+    <a style="text-align:center;"href="map.html">
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <p><img src="images1/myanmar (2).png">
+              Click this to see Data in Map 
+              <img src="images1/myanmar (3).png">
+
+              <i class="fas fa-map-marked-alt" style="font-size: 27px"></i></p>
+            <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+ -->          </div>
+        </a>
+      </div>
+    </div>
   <!-- </div> -->
 
 <style>
@@ -296,6 +328,7 @@ img:hover  {
   
   }
   </style>
+  
   <div class="row">
     <div class="col-md-12 col-sm-12">
     <a href="index.html">
