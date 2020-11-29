@@ -25,8 +25,8 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/icon1.png" />
-<meta property="og:description" content="Last Updated on Nov 27, 8:00 PM by Min Khant Kyaw" />
+<meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/covid-19-situation-in-my.png.png" />
+<meta property="og:description" content="Last Updated on Nov 29, 8:00 PM by Min Khant Kyaw" />
 <meta property="og:title" content="Covid-19 Info in Myanmar" />
 <meta property="og:url" content="https://covid-19infoweb.netlify.app/" />
 <meta property="og:type"          content="informative website" />
@@ -92,11 +92,24 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
 .nav-item a:hover{
     color: red!important;
    }
+   
    @media (max-width: 994px){
     .flex-center{
       display: none;
     }
    }
+    @media (min-width: 320px)and (max-width: 991px){
+       #link1{
+         margin-top: 8px!important;
+         border-top: 0.5px solid #b1d6da;
+       }
+       .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 15px;
+    text-align: -webkit-auto;
+    border-bottom: 0.5px solid #b1d6da;
+  }
+    }
 </style>
 <script>
   $(window).scroll(function() {
@@ -125,32 +138,29 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html" style="color: #2196f3;font-size: 17px;
+        <a class="nav-link" id="link1" href="index.html" style="color: #2196f3;font-size: 17px;
     margin-top: -2px;
-">Eng Version</a>
+"><i class="fas fa-home" style="font-size:20px;"></i> Eng Version</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #000000
-">မြန်မာဗားရှင်း</a>
+"><i class="fas fa-check-circle" style="font-size:20px;"></i> မြန်မာဗားရှင်း</a>
+
       </li>
-            <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="map.html" style="color: #000000;font-size: 17px;
     margin-top: -2px;
-">Data in Map</a>
+"><i class="fas fa-info-circle" style="font-size:20px;"></i> Data in Map</a>
       </li>
     </ul>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-  
-      
+             
      
             <ul class="navbar-nav">
             <li class="nav-item ">
@@ -204,7 +214,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
             <div class="col-md-12 col-sm-12">
               <hr style="margin-bottom: 10px; background:orange">
  <marquee bgcolor="orange"> 
-  <div class="running" style="font-size: 22px;color: #fff;font-family: sans-serif;">Last Updated on 27th Nov 8PM: Myanmar currently has +18,197 lab tests, +1,428 confirmed cases, +1,327 recovered cases, and +19 deaths.</div>
+  <div class="running" style="font-size: 22px;color: #fff;font-family: sans-serif;">Last Updated on 29th Nov 8PM: Myanmar currently has +15,220 lab tests, +1,509 confirmed cases, +1,322 recovered cases, and +31 deaths.</div>
     </marquee>
  <hr style=" margin-top: 4px; background:orange">
             </div>
@@ -225,7 +235,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
   <div class="card-body">
     <h5 class="card-title">Total Lab Tests</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">1,114,697</p>
+    font-weight: bold; color: #ffffff;">1,147,841</p>
   </div>
 </div>
 </div>
@@ -234,7 +244,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
   <div class="card-body">
     <h5 class="card-title">Confirmed Cases</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">86,633</p>
+    font-weight: bold; color: #ffffff;">89,486</p>
   </div>
 </div>
   </div>
@@ -243,7 +253,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
   <div class="card-body">
     <h5 class="card-title">Recovered Cases</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">65,972</p>
+    font-weight: bold; color: #ffffff;">68,910</p>
   </div>
 </div>
 </div>
@@ -253,7 +263,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
   <div class="card-body">
     <h5 class="card-title">Official Death Toll</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">1,865</p>
+    font-weight: bold; color: #ffffff;">1,918</p>
   </div>
 </div>
  </div>
@@ -322,77 +332,77 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
     <tr>
       <td>1.</td>
       <td>Yangon</td>
-      <td>63,396</td>
+      <td>65,121</td>
     </tr>
     <tr>
       <td>2.</td>
       <td>Mandalay</td>
-      <td>5,225</td>
+      <td>5,579</td>
     </tr>
     <tr>
       <td>3.</td>
       <td>Bago</td>
-      <td>4,867</td>
+      <td>5,093</td>
     </tr>
     <tr>
       <td>4.</td>
       <td>Rakhine</td>
-      <td>3,556</td>
+      <td>3,595</td>
     </tr>
     <tr>
       <td>5.</td>
       <td>Ayeyarwaddy</td>
-      <td>2,723</td>
+      <td>2,881</td>
     </tr>
     <tr>
       <td>6.</td>
       <td>Magaway</td>
-      <td>1,435</td>
+      <td>1,514</td>
     </tr>
     <tr>
       <td>7.</td>
       <td>Mon</td>
-      <td>1,263</td>
+      <td>1,321</td>
     </tr>
     <tr>
       <td>8.</td>
       <td>Sagaing</td>
-      <td>791</td>
+      <td>819</td>
     </tr>
     <tr>
       <td>9.</td>
       <td>Kayin</td>
-      <td>604</td>
+      <td>618</td>
     </tr>
     <tr>
       <td>10.</td>
       <td>Naypyidaw</td>
-      <td>385</td>
+      <td>398</td>
     </tr>
      <tr>
       <td>11.</td>
       <td>Thanintharyi</td>
-      <td>351</td>
+      <td>378</td>
     </tr>
     <tr>
       <td>13.</td>
       <td>Shan</td>
-      <td>304</td>
+      <td>333</td>
     </tr>
      <tr>
       <td>12.</td>
       <td>Kachin</td>
-      <td>196</td>
+      <td>208</td>
     </tr>
     <tr>
       <td>14.</td>
       <td>Chin</td>
-      <td>94</td>
+      <td>103</td>
     </tr>
      <tr>
       <td>15.</td>
       <td>Kayah</td>
-      <td>15</td>
+      <td>16</td>
     </tr>
 
   </tbody>
@@ -417,77 +427,77 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
       <tr>
       <td>1.</td>
       <td>North Okkalar</td>
-      <td>4,447</td>
+      <td>4,512</td>
     </tr>
     <tr>
       <td>2.</td>
       <td>Mingalardon</td>
-      <td>4,295</td>
+      <td>4,446</td>
     </tr>
     <tr>
       <td>3.</td>
       <td>Hlaing Thar Yar</td>
-      <td>3,810</td>
+      <td>3,869</td>
     </tr>
     <tr>
       <td>4.</td>
       <td>Insein</td>
-      <td>3,482</td>
+      <td>3,553</td>
     </tr>
     <tr>
       <td>5.</td>
       <td>Thingangyun</td>
-      <td>3,339</td>
+      <td>3,453</td>
     </tr>
     <tr>
       <td>6.</td>
       <td>Mayangone</td>
-      <td>2,736</td>
+      <td>2,913</td>
     </tr>
       <tr>
       <td>7.</td>
       <td>ShwePyiThar</td>
-      <td>2,595</td>
+      <td>2,723</td>
     </tr>
     <tr>
       <td>8.</td>
       <td>Hlaing</td>
-      <td>2,317</td>
+      <td>2,343</td>
     </tr>
     <tr>
       <td>9.</td>
       <td>Thanlyin</td>
-      <td>2,268</td>
+      <td>2,328</td>
     </tr>
     <tr>
-    <td>10.</td>
-      <td>Tamwe</td>
-      <td>2,236</td>
-    </tr>
-    <tr>
-      <td>11.</td>
+      <td>10.</td>
       <td>South Okkalar</td>
-      <td>2,217</td>
+      <td>2,285</td>
+    </tr>
+    <tr>
+    <td>11.</td>
+      <td>Tamwe</td>
+      <td>2,278</td>
     </tr>
     <tr>
       <td>12.</td>
       <td>Dagon(South)</td>
-      <td>2,029</td>
+      <td>2,116</td>
     </tr>
     <tr>
       <td>13.</td>
       <td>Kamayut</td>
-      <td>1,858</td>
+      <td>1,891</td>
     </tr>
     <tr>
     <td>14.</td>
       <td>Tharketa</td>
-      <td>1,796</td>
+      <td>1,839</td>
     </tr>
     <tr>
       <td>15.</td>
       <td>Kyimindaing</td>
-      <td>1,756</td>
+      <td>1,769</td>
     </tr>
   </tbody>
 </table>
@@ -621,14 +631,14 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
     text: 'Covid-19 Tests per Day'
   },
   xAxis: {
-    categories: ['Nov 16','Nov 17','Nov 18','Nov 19','Nov 20','Nov 21', 'Nov 22', 'Nov 23','Nov 24','Nov 25','Nov 26','Nov 27']
+    categories: ['Nov 18','Nov 19','Nov 20','Nov 21', 'Nov 22', 'Nov 23','Nov 24','Nov 25','Nov 26','Nov 27','Nov 28','Nov 29']
   },
   credits: {
     enabled: false
   },
   series: [{
     name: 'Tests per day',
-    data: [14777,13347,21232,17954,16999,18090,14881,18212,21585,17347,20118,18197],
+    data: [21232,17954,16999,18090,14881,18212,21585,17347,20118,18197,17924,15220],
     color: "black"
   }]
 });
@@ -699,22 +709,22 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
     text: 'Covid-19 Cases per Day'
   },
   xAxis: {
-    categories: ['Nov 16','Nov 17','Nov 18','Nov 19','Nov 20','Nov 21', 'Nov 22', 'Nov 23', 'Nov 24','Nov 25', 'Nov 26', 'Nov 27']
+    categories: ['Nov 18','Nov 19','Nov 20','Nov 21', 'Nov 22', 'Nov 23', 'Nov 24','Nov 25','Nov 26','Nov 27','Nov 28','Nov 29']
   },
   credits: {
     enabled: false
   },
   series: [{
     name: 'Confirmed Cases',
-    data: [1277,983,1592,1560,1532,1434,1398,1259,1731,1330,1639,1428]
+    data: [1592,1560,1532,1434,1398,1259,1731,1330,1639,1428,1344,1509]
   }, {
     name: 'Recovered Cases',
-    data: [1026,989,490,869,968,1078,1079,1130,1077,1070,1279,1327],
+    data: [490,869,968,1078,1079,1130,1077,1070,1279,1327,1616,1322],
     color: "#66a832"
 
   }, {
     name: 'Death Toll',
-    data: [18,25,25,26,19,27,17,26,19,26,36,19],
+    data: [25,26,19,27,17,26,19,26,36,19,22,31],
     color: "red"
   }]
 });

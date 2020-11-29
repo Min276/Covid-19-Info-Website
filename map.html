@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Covid-19 Info(>>Map)</title>
+    <title>Covid-19 Info(Data in Map)</title>
     <link rel="shortcut icon" href="images1/shortcut_icon.png">
 <meta name="viewport" content="width=device-width, initial-scale =1">
 <meta charset="utf-8">
@@ -27,7 +27,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/icon1.png" />
+<meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/covid-19-situation-in-my.png.png" />
 <meta property="og:description" content="This is the data related to Covid-19 Situation in Myanmar" />
 <meta property="og:title" content="COVID-19 Info in Myanmar" />
 <meta property="og:url" content="https://covid-19infoweb.netlify.app/" />
@@ -85,6 +85,19 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
 .nav-item a:hover{
     color: red!important;
    }
+   @media (min-width: 320px)and (max-width: 991px){
+       #link1{
+         margin-top: 8px!important;
+         border-top: 0.5px solid #b1d6da;
+       }
+       .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 15px;
+    text-align: -webkit-auto;
+    border-bottom: 0.5px solid #b1d6da;
+  }
+    }
+
    @media (max-width: 994px){
     .flex-center{
       display: none;
@@ -154,25 +167,20 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
-      </li>
+
       <li class="nav-item">
-        <a class="nav-link" href="index.html" style="color: #000000;font-size: 17px;
+        <a class="nav-link" id="link1" href="index.html" style="color: #000000;font-size: 17px;
     margin-top: -2px;
-">Eng Version</a>
+"><i class="fas fa-home" style="font-size:20px;"></i> Eng Version</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #000000
-">မြန်မာဗားရှင်း</a>
+"><i class="fas fa-check-circle" style="font-size:20px;"></i> မြန်မာဗားရှင်း</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="map.html" style="color: #2196f3;font-size: 17px;
     margin-top: -2px;
-">Data in Map</a>
-      </li>
-<li class="nav-item">
-        <a class="nav-link disabled" href="#"></a>
+"><i class="fas fa-info-circle" style="font-size:20px;"></i> Data in Map</a>
       </li>
     </ul>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -262,21 +270,21 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
 // Data is joined to map using value of 'hc-key' property by default.
 // See API docs for 'joinBy' for more info on linking data and map.
 var data = [
-    ['mm-tn', 351],
-    ['mm-5760', 385],
-    ['mm-mo', 1263],
-    ['mm-ra', 3556],
-    ['mm-ay', 2723],
-    ['mm-ch', 94],
-    ['mm-mg', 1435],
-    ['mm-sh', 304],
-    ['mm-kh', 15],
-    ['mm-kn', 604],
-    ['mm-kc', 196],
-    ['mm-sa', 791],
-    ['mm-ba', 4867],
-    ['mm-md', 5225],
-    ['mm-ya', 63396],
+    ['mm-tn', 378],
+    ['mm-np', 398],
+    ['mm-mo', 1321],
+    ['mm-ra', 3595],
+    ['mm-ay', 2881],
+    ['mm-ch', 103],
+    ['mm-mg', 1514],
+    ['mm-sh', 333],
+    ['mm-kh', 16],
+    ['mm-kn', 618],
+    ['mm-kc', 208],
+    ['mm-sa', 819],
+    ['mm-ba', 5093],
+    ['mm-md', 5579],
+    ['mm-ya', 65121],
 
 ];
 
@@ -313,7 +321,7 @@ Highcharts.mapChart('container', {
 
     series: [{
         data: data,
-        name: 'Total confirmed Cases',
+        name: 'Total Confirmed Cases',
         states: {
             hover: {
                 color: '#0080ff'
