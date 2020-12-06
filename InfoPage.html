@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="my">
 <head>
-    <title style="font-family:Unicode;">COVID-19 Info(မြန်မာဗားရှင်း)</title>
+    <title style="font-family:Unicode;">COVID-19 Info (မြန်မာဗားရှင်း)</title>
     <link rel="shortcut icon" href="images1/shortcut_icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
@@ -23,7 +23,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<meta name="keywords" content="COVID-19 Info မြန်မာ ကိုဗစ်">
+<meta name="description" style="font-family:Unicode;" content="ဤ ၀က်ဘ်ဆိုက်တွင် မြန်မာနိုင်ငံနှင့်သက်ဆိုင်သော COVID-19 အချက်အလက်များနှင့် သတင်းအချက်အလက်များကို ရှာဖွေဖတ်ရှု့နိုင်ပါသည်။">
 <meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/covid-19-situation-in-my.png"/>
 <meta property="og:description" style="font-family:Unicode;" content="ဒီဇင်ဘာ ၃ ရက်၊ ည ၈:၀၀ ထုတ်ပြန်သောသတင်း" />
 <meta property="og:title" style="font-family:Unicode;" content="မြန်မာနိုင်ငံတွင်ကိုဗစ်ဖြစ်ပွားနေမှုအခြေအနေ" />
@@ -99,10 +100,18 @@ img:hover  {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-   .nav-item a:hover{
+   .nav-item a{
+  transition: 0.7s;
+}
+.nav-item a:hover{
     color: red!important;
-   }
-   
+}
+.nav-item .flex-center a{
+ transition: 0.7s;
+}
+.nav-item .flex-center a:hover{
+  color: black!important;
+}   
    @media (max-width: 994px){
     .flex-center{
       display: none;
@@ -213,20 +222,12 @@ img:hover  {
       </li>
     </ul>
 
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-
-      
-                  <ul class="navbar-nav">
+       
+          <ul class="navbar-nav">
             <li class="nav-item ">
                 <div class="flex-center" style="margin-top: -1px;">
                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app/InfoPage.html" target="_blank" class="fb-ic">
-                    <i class="fab fa-facebook-square" style="font-size:22px;color:blue;
-    letter-spacing: 8px;"></i>Share to Facebook</a>
+                    <i class="fab fa-facebook-square" style="font-size:22px;letter-spacing: 8px;"></i>Share to Facebook</a>
 
 
                 </div>
@@ -235,11 +236,8 @@ img:hover  {
                 <div class="flex-center">
                  
                     
-                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app&redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 21px;
-    color: blue;
-    margin-left: 22px;
-    letter-spacing: 8px;
-"></i>Share to Messenger</a>
+                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app&redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="font-size: 21px;
+                      margin-left: 22px;letter-spacing: 8px;"></i>Share to Messenger</a>
 
                    
                 </div>
@@ -325,7 +323,8 @@ img:hover  {
     <div class="col-md-12 col-sm-12">
     <a style="text-align:center; "href="map.html">
           <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <p><img src="images1/myanmar_location.png" alt="myanmar country's location icon">
+            <p style="font-weight: 600">
+              <img src="images1/myanmar_location.png" alt="myanmar country's location icon">
               Click this to see Data in Map 
               <img src="images1/myanmar_map.png" alt="the shape of the icon of myanmar country">
 
