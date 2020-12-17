@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COVID-19 Info (Data in Map)</title>
+    <link rel="shortcut icon" href="images1/shortcut_icon.png">
+<meta name="viewport" content="width=device-width, initial-scale =1">
+<meta charset="utf-8">
+<style id="antiClickjack">
+    body{display:none !important;}
+</style>
+<script>
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+</script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/mm/mm-all.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<meta name="keywords" content="COVID-19,Myanmar,Map">
+<meta name="description" content="This is the web page where you can find COVID-19 data in Map related to Myanmar
+(Burma)">
+<meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/covid-19-situation-in-my.png" />
+<meta property="og:description" content="Last Updated on Dec 3, 8:00 PM | This is the data related to Covid-19 Situation in Myanmar" />
+<meta property="og:title" content="COVID-19 Info Website(Map)" />
+<meta property="og:url" content="https://covid-19infoweb.netlify.app/" />
+<meta property="og:type"          content="informative website" />
+<meta name="google-site-verification" content="tFS9qQuGOGx0IR6XdEdCP4OERbnSGeD8Bj-82RiFiCE" />
+<script>
+  $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+  </script>
+</head>
+<body>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="HMLcQDtq"></script>
+
+    <div id="wrapper" class="clearfix">
+<div id="fb-root"></div>
+<nav class="navbar  fixed-top navbar-expand-lg navbar-fixed-top navbar-light bg-light" style="background-color: #e3f2fd!important; ">
+  <a class="navbar-brand" href="index.html" style="font-weight: 500;">
+    <img src="images1/main_logo.png" alt="main logo of this website">
+    COVID-19 Info
+  </a>
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+  aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" id="link1" href="index.html" style="color: #000000;font-size: 17px;
+    margin-top: -2px;"><i class="fas fa-home" style="font-size:20px;"></i> Eng Version</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #000000;font-weight: 600;">
+          <i class="fas fa-check-circle" style="font-size:20px;"></i> မြန်မာဗားရှင်း</a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="map.html" style="color: #2196f3;font-size: 17px;
+    margin-top: -2px;"><i class="fas fa-info-circle" style="font-size:20px;"></i> Data in Map</a>
+      </li>
+       <li class="nav-item-x">
+      <span id="icon">v2.0
+         <a href="https://github.com/Min276" style="border-radius: 50px;" class="btn btn-dark">
+            <i class="fab fa-github"></i> Min276
+         </a>
+      </span>
+      </li>
+    </ul>
+             
+            <div class="flex-center">
+            <ul class="navbar-nav">
+                <li class="nav-item " style="margin-top: -1px;margin-right: 25px;">
+                   <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" 
+                   target="_blank" class="fb-ic">
+                    <i class="fab fa-facebook-square" style="font-size:22px;letter-spacing: 8px;"></i>Share to Facebook</a>
+                </li>
+                <li class="nav-item ">
+                    
+                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app&redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" 
+                      target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style=" font-size: 21px;letter-spacing: 8px;"></i>Share to Messenger</a>
+                </li>
+            </ul>
+          </div>
+
+   </div>
+</nav>
+<section class="container">
+<div class="row">
+<div class="col-md-12 col-sm-12">
+<div id="container" style="margin-top: 90px;"></div>
+</div>
+</div>
+
+                            <div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/covid-19-situation-in-my.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
+<div class="row">
+    <div class="col-md-12 col-sm-12">
+    <a href="index.html">
+          <div class="alert alert-warning alert-dismissible fade show" style="margin-bottom: 10px; margin-top: 15px;" role="alert">
+            <strong>Back to Home <i class="fas fa-link" style="font-size: 17px"></i>Click here</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </a>
+      </div>
+  </div>
+<div class="row">
+<div class="col-md-12 col-sm-12">
+         <div class="alert alert-warning alert-dismissible fade show" id="share" role="alert" style="text-align: center;margin-top: -5px;
+    margin-bottom: 25px;">
+ 
+<strong>Share this Website:  <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fab fa-facebook-square" style="font-size:23px;color:blue;margin-left:4px;"></i></a> 
+                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app&redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger"style="font-size:22px;color:blue;margin-left:5px"></i></a>
+</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+  </section>
+<p class="dev"> 
+                  
+                   &copy;2020 COVID-19 Info | All Rights Reserved 
+              
+                                     
+                    <br>Developed by <a href="https://minkhantkyaw-web.netlify.app/">Min Khant Kyaw</a>
+
+
+                   </p>
+    <script src="js/map.js"></script>

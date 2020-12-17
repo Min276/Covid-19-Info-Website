@@ -1,79 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Covid-19 Info(Eng Version)</title>
-    <link rel="shortcut icon" href="images1/si2.png">
+    <title>COVID-19 Info Web</title>
+    <link rel="shortcut icon" href="https://covid-19infoweb.netlify.app/images1/shortcut_icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+   
+   <style id="antiClickjack">
+    body{display:none !important;}
+</style>
+<script>
+    if (self === top) {
+        var antiClickjack = document.getElementById("antiClickjack");
+        antiClickjack.parentNode.removeChild(antiClickjack);
+    } else {
+        top.location = self.location;
+    }
+</script>
+ 
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="title" content="COVID-19 Info Web">
+<meta name="image" content="https://covid-19infoweb.netlify.app/images1/icon.png">
+<meta name="language" content="English">
+<meta name="author" content="Min Khant Kyaw">
+<meta name="revisit-after" content="3 days">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/icon1.png" />
-<meta property="og:description" content="Nov 21, 8:00 PM" />
-<meta property="og:title" content="Covid-19 Info in Myanmar" />
+<meta name="keywords" content="COVID-19,Info,Myanmar">
+<meta name="description" content="This is the website where you can find COVID-19 data, and information related to Myanmar (Burma)">
+<meta property="og:image" content="https://covid-19infoweb.netlify.app/images1/icon.png" />
+<meta property="og:description" content="Last Updated on December 17, 8:00 PM" />
+<meta property="og:title" content="COVID-19 Info Website" />
 <meta property="og:url" content="https://covid-19infoweb.netlify.app/" />
 <meta property="og:type"          content="informative website" />
 <meta name="google-site-verification" content="tFS9qQuGOGx0IR6XdEdCP4OERbnSGeD8Bj-82RiFiCE" />
 
-
-<style type="text/css">
-  table{
-    margin-bottom: 35px!important;
-  }
-  .dev{
-    background: #2196F3;
-    font-weight: bold;
-    color: #FFFFFF;
-    margin-bottom: 0px;
-    font-size: 15px;
-}
-.dev a{
-  color: #000000;
-  /*font-weight: bold;*/
-}
-.dev a:hover{
-  color: #000000;
-}
-nav{
-  padding: .5rem 1rem;
-}
-nav.navbar.shrink{
-  padding: 0 1rem;
-}
-.bg-success{
-  background-color: #33A733!important;
-}
-.alert-warning {
-    color: #2196F3;
-    background-color: #fafafa;
-    border-color: #efeeea;
-}
-.alert-dismissible .close {
-    position: absolute;
-    top: -2px;
-    right: 0;
-    padding: .75rem 1.25rem;
-    color: inherit;
-}
- 
-
-.alert-warning:hover{
-   color: #000000;
-   text-decoration: none;
- }
- a:hover{
-   text-decoration: none;
- }
-  @font-face {
-font-family:'Unicode';
-src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') format('woff'), url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.ttf') format('ttf');
-}
-
-</style>
 <script>
   $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
@@ -85,177 +52,184 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
   </script>
 </head>
 <body>
-   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="HMLcQDtq"></script>
+
 
     <div id="wrapper" class="clearfix">
         <!-- Navbar -->
 <div id="fb-root"></div>
-<nav class="navbar  fixed-top navbar-expand-lg navbar-fixed-top navbar-light bg-light"style="background-color: #e3f2fd!important; ">
-  <a class="navbar-brand" href="#" style="font-weight: 500;">
-    <img src="images1/sl.png" alt="">
-     <!-- <img src="images1/icon1.png" alt=""> -->
-
-    Covid-19 Info
+<nav class="navbar  fixed-top navbar-expand-lg navbar-fixed-top navbar-light bg-light" style="background-color: #e3f2fd!important; ">
+  <a class="navbar-brand" href="index.html" style="font-weight: 500;">
+    <img src="https://covid-19infoweb.netlify.app/images1/main_logo.png" alt="main logo of this website">
+    COVID-19 Info
   </a>
-  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+  aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" id="link1" href="index.html" style="color: #2196f3;font-size: 17px;
+    margin-top: -2px;"><i class="fas fa-home" style="font-size:20px;"></i> Eng Version</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index.html" style="color: #2196f3;font-size: 17px;
-    margin-top: -2px;
-">Eng Version</a>
+        <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #000000;font-weight: 600;">
+          <i class="fas fa-check-circle" style="font-size:20px;"></i> မြန်မာဗားရှင်း</a>
+
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="InfoPage.html" style="font-family:Unicode;color: #000000
-">မြန်မာဗားရှင်း</a>
+        <a class="nav-link" href="map.html" style="color: #000000;font-size: 17px;
+    margin-top: -2px;"><i class="fas fa-info-circle" style="font-size:20px;"></i> Data in Map</a>
       </li>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#"></a>
+      <li class="nav-item-x">
+      <span id="icon">v2.0
+         <a href="https://github.com/Min276" style="border-radius: 50px;" class="btn btn-dark">
+            <i class="fab fa-github"></i> Min276
+         </a>
+      </span>
       </li>
     </ul>
+            <div class="flex-center">
             <ul class="navbar-nav">
-            <li class="nav-item ">
-                <div class="flex-center" style="margin-top: -1px;">
-                   <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic">
-                    <i class="fab fa-facebook-square" style="font-size:22px;color:blue;
-    letter-spacing: 8px;"></i>Share to Facebook</a>
-
-
-                </div>
-            </li>
-            <li class="nav-item ">
-                <div class="flex-center">
-                 
+                <li class="nav-item " style="margin-top: -1px;margin-right: 25px;">
+                   <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" 
+                   target="_blank" class="fb-ic">
+                    <i class="fab fa-facebook-square" style="font-size:22px;letter-spacing: 8px;"></i>Share to Facebook</a>
+                </li>
+                <li class="nav-item ">
                     
-                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="    font-size: 21px;
-    color: blue;
-    margin-left: 22px;
-    letter-spacing: 8px;
-"></i>Share to Messenger</a>
+                      <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app&redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" 
+                      target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style=" font-size: 21px;letter-spacing: 8px;"></i>Share to Messenger</a>
+                </li>
+            </ul>
+          </div>
 
-                   
-                </div>
-            </li>
-
-        </ul>
-    <!--
- -->  </div>
+   </div>
 </nav>
-<style>
-   .nav-item a:hover{
-    color: red!important;
-   }
-   @media (max-width: 994px){
-    .flex-center{
-      display: none;
-    }
-   }
-  </style>
+    
+              <div class="main-content" style="background:#add4e6">
 
-
-                <div class="main-content" style="background:#add4e6">
                   
 
                 <div class="container">
-                  
-        <center>
         <section>
           <div class="row">
-            <div class="col-md-12 col-sm-12" style="    margin-top: 88px;
-    font-weight: bold;
-    font-size: 18px;
-    color: #3F51B5;
-    font-family: sans-serif;
-">
-              Covid-19 Situations in Myanmar
-            </div>
+
+            <div class="col-md-12 col-sm-12" style="margin-top: 88px; font-weight: bold; font-size: 18px; 
+            color: #3F51B5;font-family: sans-serif;"> COVID-19 Situation in Myanmar</div>
           </div>
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <hr style="margin-bottom: 10px;"color="orange">
- <marquee bgcolor="orange"> 
-  <div class="running" style="font-size: 22px;color: #fff;font-family: sans-serif;">Last Updated on 21th Nov 8PM:<q>Myanmar currently has +18,090 lab tests, +1,434 confirmed cases, +1,078 recovered cases, and +27 deaths.</q><div>
-    </marquee>
- <hr style=" margin-top: 4px;" color="orange">
-            </div>
-          </div>
+  
           <a id="contact" href="tel:2019">
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <div class="alert alert-warning" style="margin-top: 9px; margin-bottom: 16px;"role="alert">
             <strong>MOHS Hotline: <i class="fas fa-phone-square-alt" style="font-size: 17px;"></i> 2019</strong>
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
           </div>
         </a>
-            <div class="row">
+        <center>
+      <div class="row">
 
-  <div class="col-md-3 col-sm-12">
+  <div class="col-md-3 col-sm-6 col-12">
 
   <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Total Lab Tests</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">1,004,357</p>
+    font-weight: bold; color: #ffffff;">1,527,037</p>
   </div>
 </div>
 </div>
-    <div class="col-md-3 col-sm-12">
+    <div class="col-md-3 col-sm-6 col-12">
   <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Confirmed Cases</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">77,848</p>
+    font-weight: bold; color: #ffffff;">113,082</p>
   </div>
 </div>
   </div>
-  <div class="col-md-3 col-sm-12">
+  <div class="col-md-3 col-sm-6 col-12">
   <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Recovered Cases</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">57,679</p>
+    font-weight: bold; color: #ffffff;">91,537</p>
   </div>
 </div>
 </div>
-  <div class="col-md-3 col-sm-12">
+  <div class="col-md-3 col-sm-6 col-12">
 
   <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Death Toll</h5>
+    <h5 class="card-title">Official Death Toll</h5>
     <p class="card-text" style="font-size: 18px;
-    font-weight: bold; color: #ffffff;">1,722</p>
+    font-weight: bold; color: #ffffff;">2,377</p>
   </div>
 </div>
  </div>
 </div>
-</section>
 </center>
+</section>
+ <div class="row" style="margin-bottom: -30px;">
+        <div class="col-md-6 col-sm-12">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+       <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images1/aware carousel-2.jpg" class="d-block w-100"  style="height: 300px" alt="Let's fight COVID-19 together">
+    </div>
+    <div class="carousel-item">
+      <img src="images1/aware-carousel-5.jpg" class="d-block w-100" style="height: 300px" alt="COVID-19 Prevention">
+    </div>
+    <div class="carousel-item">
+      <img src="images1/aware-carousel-10.jpg" class="d-block w-100" style="height: 300px" alt="COVID-19 Prevention Tips">
+    </div>
+    <div class="carousel-item">
+      <img src="images1/aware-carousel-4.jpg" class="d-block w-100" style="height: 300px" alt="Social Distancing">
+    </div>
+    <div class="carousel-item">
+      <img src="images1/aware-carousel-1.jpg" class="d-block w-100" style="height: 300px" alt="Wear face masks and stay safe">
+    </div>
+  </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>      
+   </div>
+  <div class="col-md-6 col-sm-12">
+  <div class="alert alert-warning" id="info-box" style="height: 300px;" role="alert">
+      <h5><i class="fas fa-fw fa-virus fa-spin" style="font-size: 23px;color: #000000"></i> COVID-19 Contact List
+      </h5>
+    <hr style="margin-bottom: 10px; background:orange">
+    <ul class="contact-box" style="margin-left: -25px;text-align: center;">
+     
+     <li>Yangon Region Public Health:<br><button style="margin-left: 3px"class="button1"onclick="window.location='tel:09449001261';"><i class="fa fa-fw fa-phone-alt" style="font-size:19px;color:white"></i></button>&nbsp;09-449001261 </li><br>
+     <li>Mandalay Region Public Health:<br> <button class="button1"onclick="window.location='tel:0943099526';"><i class="fa fa-fw fa-phone-alt" style="font-size:19px;color:white"></i></button>&nbsp;09-43099526</li><br>
+      <li><span>Public Health Emergency Response:</span><br><button style="margin-left: -15px"class="button3"onclick="window.location='tel:01256123';"><i class="fa fa-fw fa-phone-alt" style="font-size:19px;color:white"></i></button>&nbsp;01-256123</li><br>
+    </ul>
+    </div> 
+</div>
+</div>
 <br>
-
-
-<section>
+<section style="margin-bottom: -10px;">
   
 <div class="row">
           
                 <div class="col-md-6 col-sm-12">
                     <div class="shadow-sm pt-1 pb-2 mb-5 bg-white rounded">
                             <div id="daily_analytics_chart"></div>
-                            <center><div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/covid-19-tests-per-day.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div></center>
+                             <div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/covid-19-tests-per-day.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
 
                           
                     </div>
@@ -263,7 +237,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
                 <div class="col-md-6 col-sm-12">
                     <div class="shadow-sm pt-1 pb-2 mb-5 bg-white rounded">
                             <div id="daily_analytics_chart1"></div>
-                            <center><div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/covid-19-cases-per-day.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div></center>
+                            <div class="fb-like" data-href="https://covid-19infoweb.netlify.app/images1/covid-19-cases-per-day.png" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
 
                     </div>
                 </div>
@@ -272,13 +246,31 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
             </div>
         </section>
         
+
+    <div class="row" style="margin-bottom: -10px;">
+    <div class="col-md-12 col-sm-12">
+       <a style="text-align:center;" href="map.html">
+          <div class="alert alert-warning" id="map-box" role="alert">
+            <article style="font-weight: 600; font-size: 19px; margin-top: 13px;margin-bottom: 13px;">
+              <img src="images1/myanmar_location.png" alt="myanmar country's location icon">
+              Click this to see Data&nbsp;in&nbsp;Map
+              <img src="images1/myanmar_map.png" alt="the shape of the icon of myanmar country">
+
+              <i class="fas fa-map-marked-alt" style="font-size: 27px"></i>
+            </article>
+         </div>
+        </a>
+      </div>
+    </div>
+
+
   
     <div class="row">
       <div class="col-md-6 col-sm-12">
              <table class=" table table-striped table table-hover table-light">
   <thead>
     <tr>
-         <th colspan="4" style="text-align: center;">Covid Situations in Myanmar</th>
+         <th colspan="3" style="text-align: center;">COVID-19 Situations in Myanmar</th>
        </tr>
 
   </thead>
@@ -287,107 +279,91 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
       <th scope="col">No</th>
       <th scope="col">Region</th>
       <th scope="col">Confirmed Caes</th>
-      <!-- <th scope="col">Handle</th> -->
     </tr>
     <tr>
       <td>1.</td>
       <td>Yangon</td>
-      <td>57,875</td>
+      <td>77,748</td>
     </tr>
+    <tr>
       <td>2.</td>
-      <td>Bago</td>
-      <td>4,164</td>
+      <td>Mandalay</td>
+      <td>10,537</td>
     </tr>
     <tr>
       <td>3.</td>
-      <td>Mandalay</td>
-      <td>4,008</td>
+      <td>Bago</td>
+      <td>6,652</td>
     </tr>
     <tr>
       <td>4.</td>
       <td>Rakhine</td>
-      <td>3,394</td>
+      <td>4,025</td>
     </tr>
     <tr>
       <td>5.</td>
       <td>Ayeyarwaddy</td>
-      <td>2,320</td>
+      <td>4,021</td>
     </tr>
     <tr>
       <td>6.</td>
       <td>Magaway</td>
-      <td>1,225</td>
+      <td>2,256</td>
     </tr>
     <tr>
       <td>7.</td>
       <td>Mon</td>
-      <td>1,013</td>
+      <td>1,999</td>
     </tr>
     <tr>
       <td>8.</td>
       <td>Sagaing</td>
-      <td>692</td>
+      <td>1,424</td>
     </tr>
     <tr>
       <td>9.</td>
       <td>Kayin</td>
-      <td>514</td>
+      <td>898</td>
     </tr>
     <tr>
       <td>10.</td>
-      <td>Naypyidaw</td>
-      <td>353</td>
+      <td>Shan</td>
+      <td>650</td>
     </tr>
-     <tr>
+    <tr>
       <td>11.</td>
+      <td>Naypyidaw</td>
+      <td>579</td>
+    </tr>
+    <tr>
+      <td>12.</td>
       <td>Thanintharyi</td>
-      <td>342</td>
+      <td>487</td>
     </tr>
     <tr>
       <td>13.</td>
-      <td>Shan</td>
-      <td>254</td>
-    </tr>
-     <tr>
-      <td>12.</td>
       <td>Kachin</td>
-      <td>158</td>
+      <td>437</td>
     </tr>
     <tr>
       <td>14.</td>
       <td>Chin</td>
-      <td>91</td>
+      <td>155</td>
     </tr>
      <tr>
       <td>15.</td>
       <td>Kayah</td>
-      <td>11</td>
+      <td>32</td>
     </tr>
-    <!-- <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>@twitter</td>
-    </tr> -->
+
   </tbody>
 </table>
-<!-- <center><div class="fb-like" data-href="https://covid-19infoweb.netlify.app" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div></center>
- -->
         </div>
         <div class="col-md-6 col-sm-12">
             <table class=" table table-striped table table-hover table-light">
   <thead>
     <tr>
-         <th colspan="4" style="text-align: center;">Top 15 Townships List (Yangon Region)</th>
+         <th colspan="3" style="text-align: center;">Top 15 Townships List (Yangon)</th>
        </tr>
 
   </thead>
@@ -396,101 +372,90 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
       <th scope="col">No</th>
       <th scope="col">Township</th>
       <th scope="col">Confirmed Cases</th>
-      <!-- <th scope="col">Handle</th> -->
     </tr>   
-      <tr>
+    <tr>
       <td>1.</td>
-      <td>North Okkalar</td>
-      <td>4,107</td>
+      <td>Mingalardon</td>
+      <td>5,430</td>
     </tr>
     <tr>
       <td>2.</td>
-      <td>Mingalardon</td>
-      <td>3,837</td>
+      <td>NorthOkkalar</td>
+      <td>5,327</td>
     </tr>
     <tr>
       <td>3.</td>
-      <td>Hlaing Thar Yar</td>
-      <td>3,551</td>
+      <td>HlaingTharYar</td>
+      <td>4,426</td>
     </tr>
     <tr>
       <td>4.</td>
       <td>Insein</td>
-      <td>3,186</td>
+      <td>4,203</td>
     </tr>
     <tr>
       <td>5.</td>
       <td>Thingangyun</td>
-      <td>3,126</td>
+      <td>4,079</td>
     </tr>
     <tr>
       <td>6.</td>
       <td>Mayangone</td>
-      <td>2,443</td>
+      <td>3,534</td>
     </tr>
       <tr>
       <td>7.</td>
       <td>ShwePyiThar</td>
-      <td>2,244</td>
+      <td>3,480</td>
     </tr>
     <tr>
       <td>8.</td>
-      <td>Hlaing</td>
-      <td>2,149</td>
+      <td>SouthDagon</td>
+      <td>2,786</td>
     </tr>
     <tr>
       <td>9.</td>
-      <td>Thanlyin</td>
-      <td>2,089</td>
+      <td>Hlaing</td>
+      <td>2,763</td>
     </tr>
     <tr>
-    <td>10.</td>
+      <td>10.</td>
       <td>Tamwe</td>
-      <td>2,050</td>
+      <td>2,696</td>
     </tr>
     <tr>
       <td>11.</td>
-      <td>South Okkalar</td>
-      <td>1,994</td>
+      <td>SouthOkkalar</td>
+      <td>2,674</td>
     </tr>
-    <tr>
+     <tr>
       <td>12.</td>
-      <td>Dagon(South)</td>
-      <td>1,746</td>
+      <td>Thanlyin</td>
+      <td>2,670</td>
     </tr>
     <tr>
       <td>13.</td>
       <td>Kamayut</td>
-      <td>1,737</td>
+      <td>2,221</td>
     </tr>
     <tr>
       <td>14.</td>
-      <td>Kyimindaing</td>
-      <td>1,687</td>
+      <td>Tharketa</td>
+      <td>2,208</td>
     </tr>
     <tr>
-    <td>15.</td>
-      <td>Tharketa</td>
-      <td>1,640</td>
+      <td>15.</td>
+      <td>NorthDagon</td>
+      <td>1,987</td>
     </tr>
-    
-    
-      
-
-    <!-- <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
- -->  </tbody>
+  </tbody>
 </table>
-<!-- <center><div class="fb-like" data-href="https://covid-19infoweb.netlify.app" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div></center> -->
 
         </div>
       </div>
              <div class="row">
     <div class="col-md-12 col-sm-12">
-    <a style="text-align:center;"href="InfoPage.html">
+    <a style="text-align:center;" href="InfoPage.html">
           <div class="alert alert-warning alert-dismissible fade show" role="alert">
             <strong style="font-family: Unicode;">မြန်မာဗားရှင်း <i class="fas fa-link" style="font-size: 17px"></i> Click here</strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -499,18 +464,13 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
           </div>
         </a>
       </div>
-        <div class="col-md-12 col-sm-12">
+        <div class="col-md-12 col-sm-12" style="margin-top: -20px;">
          <div class="alert alert-warning alert-dismissible fade show" id="share" role="alert" style="text-align: center;margin-top: -5px;
     margin-bottom: 25px;">
-  <style>
-    @media (min-width: 995px) and (max-width: 1500px){
-  #share {
-    display: none;
-  }
-  }
-  </style>
-            <strong>Share this Website:  <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fa fa-facebook-square" style="font-size:23px;color:blue;margin-left:4px;"></i></a> 
-                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app &redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger"style="font-size:22px;color:blue;margin-left: 6px"></i></a>
+
+            <strong>Share this Website:  <a href="https://www.facebook.com/sharer/sharer.php?u=https://covid-19infoweb.netlify.app" target="_blank" class="fb-ic"><i class="fab fa-facebook-square" style="font-size:23px;color:blue;margin-left:4px;"></i></a> 
+                   <a href="https://www.facebook.com/dialog/send?app_id=140586622674265&link=https://covid-19infoweb.netlify.app&redirect_uri=https://covid19infoweb.netlify.app%2Fmessengerredirect" target="_blank" class="fb-ic"><i class="fab fa-facebook-messenger" style="font-size:22px;color:blue;margin-left:
+                   5px;"></i></a>
 </strong>
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -526,24 +486,16 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
 
         <div class="clearfix"></div>
                   
-                 <center><p class="dev"> 
+                 <p class="dev"> 
                   
-                   &copy;2020 Covid-19 Info | All Rights Reserved 
+                   &copy;2020 COVID-19 Info | All Rights Reserved 
               
                                      
                     <br>Developed by <a href="https://minkhantkyaw-web.netlify.app/">Min Khant Kyaw</a>
 
 
-                   </p></center>
-        <!-- Footer -->
-    <!-- <script type="text/javascript" src="https://covid-19.te4m.org/fd_bootstrap/js/jquery-3.3.1.min.js"></script>
-
-<script type="text/javascript" src="https://covid-19.te4m.org/fd_bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript" src="https://covid-19.te4m.org/fd_bootstrap/js/popper.min.js"></script>
-
-<script type="text/javascript" src="https://covid-19.te4m.org/plugins/axios/axios.min.js"></script>
-<script src="https://covid-19.te4m.org/plugins/vue/dist/vue_2.js"></script> -->
-
+                   </p>
+      
 
 
 
@@ -552,180 +504,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script type="text/javascript">
-        var xAxisCatEnco = JSON.parse(`["Oct 10", "Oct 11", "Oct 12", "Oct 13", "Oct 14", "Oct 16", "Oct 17", "Oct 18", "Oct 19", "Oct 20", "Oct 21", "Oct 22"]`);
-        var dataEnco = JSON.parse(`[946,1010,1142,975,1294,987,1252,1400,1012,1461,2158,1906,1344,1123,888,1025]`);
-        Highcharts.chart('daily_analytics_chart', {
-            chart: {
-                zoomType: 'x'
-            },
-            title: {
-                text:  "မြန်မာတစ်ပြည်လုံးအတွက် ကူးစက်မှုနှုန်း (33488 ဦး)",
-            },
-            subtitle: {
-                text: document.ontouchstart === undefined ?
-                    'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
-            },
-            xAxis: {
-                categories: xAxisCatEnco
-            },
-            credits: {
-                enabled: false
-            },
-
-            yAxis: {
-                title: {
-                    text: 'ကူးစက်မှုဦးရေ'
-                }
-            },
-            legend: {
-                enabled: false
-            },
-            plotOptions: {
-                area: {
-                    fillColor: {
-                        linearGradient: {
-                            x1: 0,
-                            y1: 0,
-                            x2: 0,
-                            y2: 1
-                        },
-                        stops: [
-                            [0, Highcharts.getOptions().colors[0]],
-                            [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
-                        ]
-                    },
-
-                    marker: {
-                        radius: 2
-                    },
-                    lineWidth: 1,
-                    states: {
-                        hover: {
-                            lineWidth: 1
-                        }
-                    },
-                    threshold: null
-                }
-            },
-            series: [{
-                type:'area',
-                name: 'COVID-19 Daily Analytics',
-                data: dataEnco
-            }, ]
-        });
-        Highcharts.chart('daily_analytics_chart', {
-  chart: {
-    type: 'area'
-  },
-  title: {
-    text: 'Covid-19 Tests per Day'
-  },
-  xAxis: {
-    categories: ['Nov 10', 'Nov 11','Nov 12','Nov 13','Nov 14','Nov 15','Nov 16','Nov 17','Nov 18','Nov 19','Nov 20','Nov 21']
-  },
-  credits: {
-    enabled: false
-  },
-  series: [{
-    name: 'Tests per day',
-    data: [17000,15534,17250,15281,14777,13347,21232,17954,16999,18090],
-    color: "black"
-  }]
-});
-        Highcharts.chart('daily_analytics_chart1', {
-            chart: {
-                zoomType: 'x'
-            },
-            title: {
-                text:  "မြန်မာတစ်ပြည်လုံးအတွက် ကူးစက်မှုနှုန်း (33488 ဦး)",
-            },
-            subtitle: {
-                text: document.ontouchstart === undefined ?
-                    'Click and drag in the plot area to zoom in' : 'Pinch the chart to zoom in'
-            },
-            xAxis: {
-                categories: xAxisCatEnco
-            },
-            credits: {
-                enabled: false
-            },
-
-            yAxis: {
-                title: {
-                    text: 'ကူးစက်မှုဦးရေ'
-                }
-            },
-            legend: {
-                enabled: false
-            },
-            plotOptions: {
-                area: {
-                    fillColor: {
-                        linearGradient: {
-                            x1: 0,
-                            y1: 0,
-                            x2: 0,
-                            y2: 1
-                        },
-                        stops: [
-                            [0, Highcharts.getOptions().colors[0]],
-                            [1, Highcharts.color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
-                        ]
-                    },
-
-                    marker: {
-                        radius: 2
-                    },
-                    lineWidth: 1,
-                    states: {
-                        hover: {
-                            lineWidth: 1
-                        }
-                    },
-                    threshold: null
-                }
-            },
-            series: [{
-                type:'area',
-                name: 'COVID-19 Daily Analytics',
-                data: dataEnco
-            }, ]
-        });
-        Highcharts.chart('daily_analytics_chart1', {
-  chart: {
-    type: 'area'
-  },
-  title: {
-    text: 'Covid-19 Cases per Day'
-  },
-  xAxis: {
-    categories: ['Nov 10', 'Nov 11','Nov 12','Nov 13','Nov 14','Nov 15','Nov 16','Nov 17','Nov 18','Nov 19','Nov 20','Nov 21']
-  },
-  credits: {
-    enabled: false
-  },
-  series: [{
-    name: 'Confirmed Cases',
-    data: [1266,1212,1145,1136,1277,983,1592,1560,1532,1434]
-  }, {
-    name: 'Recovered Cases',
-    data: [750,1121,1031,773,1026,989,490,869,968,1078],
-    color: "#66a832"
-
-  }, {
-    name: 'Death Toll',
-    data: [24,19,28,26,18,25,25,26,19,27],
-    color: "red"
-  }]
-});
-//
-
-
-
-
-    </script>
-
+    <script src="js/chart.js"></script>
 </div>
 </div>
  

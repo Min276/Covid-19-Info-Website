@@ -1,0 +1,165 @@
+body{
+    text-align: center;
+  }
+  table{
+    margin-bottom: 35px!important;
+  }
+  .dev{
+    background: #2196F3;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.dev a{
+  color: #000000;
+}
+.dev a:hover{
+  color: #000000;
+}
+nav{
+  padding: .5rem 1rem;
+}
+nav.navbar.shrink{
+  padding: 0 1rem;
+}
+.bg-success{
+  background-color: #33A733!important;
+}
+.alert-warning{
+    color: #2196F3;
+    background-color: #fafafa;
+    border-color: #efeeea;
+    margin-bottom: 45px;
+}
+.alert-warning:hover{
+   color: #000000;
+}
+#info-box{
+    color: blue;
+    background-color: #fafafa;
+    border-color: #efeeea;
+    margin-bottom: 45px;
+}
+.alert-dismissible .close {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    padding: .75rem 1.25rem;
+    color: inherit;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000;
+}
+.carousel-indicators .active {
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff!important;
+}
+  @font-face {
+font-family:'Unicode';
+src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') format('woff'), url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.ttf') format('ttf');
+}
+.nav-item a{
+  transition: 0.7s;
+  font-weight: 500;
+}
+.nav-item a:hover{
+    color: red!important;
+}
+.flex-center .nav-item  a{
+ transition: 0.7s;
+ font-weight: 500;
+}
+.flex-center .nav-item a:hover{
+  color: #0490ff!important;
+    background: white;
+    box-shadow: 1px 1px 3px #212324;
+    border: solid #fcfcfc 1px;
+    padding: 5px;
+}
+ .button1{
+    border-radius: 50px;
+    background: green;
+    margin-left: 1
+  }
+  
+  .button3{
+    border-radius: 50px;
+    background: red;
+  }
+  .btn-dark{
+    padding: 0px 5px 0px 5px;
+    margin-bottom: 2px;
+  }
+  
+    @media (min-width: 992px){
+    .nav-item-x #icon{
+        display: none;
+      }
+
+   }
+   @media (max-width: 994px){
+    .flex-center{
+      display: none;
+    }
+   }
+  
+   @media(min-width: 320px)and (max-width: 338px){
+    .contact-box li span{
+      font-size: 14.5px;
+    }
+}
+ @media(min-width: 320px)and (max-width: 767px){
+    #info-box{
+      margin-top: 20px;
+    }
+}
+    @media (min-width: 320px)and (max-width: 991px){
+       #link1{
+         margin-top: 8px!important;
+         border-top: 0.5px solid #b1d6da;
+       }
+       .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 15px;
+    text-align: -webkit-auto;
+    border-bottom: 0.5px solid #b1d6da;
+    }
+      .nav-item a {
+     transition: 0s;
+    }
+    .nav-item-x{
+      padding-right: 0;
+    padding-left: 15px;
+    text-align: -webkit-auto;
+      font-size: 20px;
+      font-weight: bold;
+    color: #2196F3;
+    }
+    .btn-dark:hover{
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+    box-shadow: 0 0 0 0.2rem rgba(82,88,93,.5);
+    }
+
+}
+     @media (min-width: 995px) and (max-width: 1500px){
+          #share{
+            display: none;
+          }
+          }
