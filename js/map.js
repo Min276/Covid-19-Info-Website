@@ -2,21 +2,21 @@
 // Data is joined to map using value of 'hc-key' property by default.
 // See API docs for 'joinBy' for more info on linking data and map.
 var data = [
-    ['mm-tn', 402],
+    ['mm-tn', 494],
     ['mm-np', 426],
-    ['mm-mo', 1539],
-    ['mm-ra', 4012],
-    ['mm-ay', 3092],
+    ['mm-mo', 2032],
+    ['mm-ra', 4029],
+    ['mm-ay', 4070],
     ['mm-ch', 115],
-    ['mm-mg', 1592],
-    ['mm-sh', 450],
-    ['mm-kh', 21],
-    ['mm-kn', 702],
-    ['mm-kc', 235],
-    ['mm-sa', 893],
-    ['mm-ba', 6506],
-    ['mm-md', 9839],
-    ['mm-ya', 76679],
+    ['mm-mg', 2278],
+    ['mm-sh', 656],
+    ['mm-kh', 32],
+    ['mm-kn', 911],
+    ['mm-kc', 448],
+    ['mm-sa', 1458],
+    ['mm-ba', 6744],
+    ['mm-md', 10791],
+    ['mm-ya', 78400],
 
 ];
 
