@@ -112,7 +112,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
       }
 
    }
-   @media (max-width: 994px){
+   @media (max-width: 1020px){
     .flex-center{
       display: none;
     }
@@ -158,7 +158,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
     }
 
 }
-     @media (min-width: 995px) and (max-width: 1500px){
+     @media (min-width: 1021px) and (max-width: 1500px){
           #share{
             display: none;
           }
