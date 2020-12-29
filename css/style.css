@@ -106,6 +106,7 @@ src: url('https://cdn.rawgit.com/LeonarAung/MyanmarFont/6cf1262f/mon3.woff') for
     margin-bottom: 2px;
   }
   
+  
     @media (min-width: 992px){
     .nav-item-x #icon{
         display: none;
