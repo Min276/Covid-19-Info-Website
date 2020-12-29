@@ -6,6 +6,12 @@
 
 This is an informative website aimed to let people in Myanmar know the trusted &amp; up-to-date info concerned with novel coronavirus.
 
+### Website Links
+
+- [COVID-19 Info Web (Github)](https://min276.github.io/Covid-19-Info-Website/) - Original Web hosted on Github
+
+- [COVID-19 Info Web (Netlify)](https://covid-19infoweb.netlify.app/) - Website deployed from Github
+
 ## Data Sources
 - [MOHS Official Dashboard](https://doph.maps.arcgis.com/apps/opsdashboard/index.html#/f8fb4ccc3d2d42c7ab0590dbb3fc26b8) - Coronavirus Disease 2019 (COVID-19) Surveillance Dashboard (Myanmar)
 
