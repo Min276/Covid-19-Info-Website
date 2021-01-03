@@ -2,21 +2,21 @@
 // Data is joined to map using value of 'hc-key' property by default.
 // See API docs for 'joinBy' for more info on linking data and map.
 var data = [
-    ['mm-tn', 501],
+    ['mm-tn', 578],
     ['mm-np', 426],
-    ['mm-mo', 2061],
-    ['mm-ra', 4055],
-    ['mm-ay', 4146],
-    ['mm-ch', 168],
-    ['mm-mg', 2347],
-    ['mm-sh', 674],
-    ['mm-kh', 35],
-    ['mm-kn', 963],
-    ['mm-kc', 468],
-    ['mm-sa', 1513],
-    ['mm-ba', 6898],
-    ['mm-md', 11425],
-    ['mm-ya', 79314],
+    ['mm-mo', 2378],
+    ['mm-ra', 4128],
+    ['mm-ay', 4841],
+    ['mm-ch', 228],
+    ['mm-mg', 2840],
+    ['mm-sh', 812],
+    ['mm-kh', 46],
+    ['mm-kn', 1113],
+    ['mm-kc', 601],
+    ['mm-sa', 1948],
+    ['mm-ba', 7898],
+    ['mm-md', 13937],
+    ['mm-ya', 83281],
 
 ];
 
@@ -27,11 +27,12 @@ Highcharts.mapChart('container', {
     },
 
     title: {
-        text: 'COVID-19 Situation in Myanmar'
+        text: '<article style="font-family:serif">COVID-19 Situation in Myanmar</article>'
     },
 
     subtitle: {
-               text: 'Press each state & division to see data'
+               text: '<strong>Last Updated on SUN 3.1.2021</strong> <br> Press each state & division to see data'
+
     },
 
     mapNavigation: {
