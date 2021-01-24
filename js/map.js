@@ -2,21 +2,21 @@
 // Data is joined to map using value of 'hc-key' property by default.
 // See API docs for 'joinBy' for more info on linking data and map.
 var data = [
-    ['mm-tn', 578],
-    ['mm-np', 426],
-    ['mm-mo', 2378],
-    ['mm-ra', 4128],
-    ['mm-ay', 4841],
-    ['mm-ch', 228],
-    ['mm-mg', 2840],
-    ['mm-sh', 812],
-    ['mm-kh', 46],
-    ['mm-kn', 1113],
-    ['mm-kc', 601],
-    ['mm-sa', 1948],
-    ['mm-ba', 7898],
-    ['mm-md', 13937],
-    ['mm-ya', 83281],
+    ['mm-tn', 634],
+    ['mm-np', 1204],
+    ['mm-mo', 3107],
+    ['mm-ra', 4229],
+    ['mm-ay', 5797],
+    ['mm-ch', 330],
+    ['mm-mg', 3431],
+    ['mm-sh', 1041],
+    ['mm-kh', 71],
+    ['mm-kn', 1307],
+    ['mm-kc', 837],
+    ['mm-sa', 2642],
+    ['mm-ba', 9046],
+    ['mm-md', 16727],
+    ['mm-ya', 86646],
 
 ];
 
@@ -31,7 +31,7 @@ Highcharts.mapChart('container', {
     },
 
     subtitle: {
-               text: '<strong>Last Updated on SUN 3.1.2021</strong> <br> Press each state & division to see data'
+               text: '<strong>Last Updated on SUN 24.1.2021</strong> <br> Press each state & division to see data'
 
     },
 
