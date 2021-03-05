@@ -4,6 +4,9 @@
 
 # Covid-19-Info-Website
 
+![code quality score](https://www.code-inspector.com/project/19830/score/svg) &nbsp;&nbsp;&nbsp;
+![code quality grade](https://www.code-inspector.com/project/19830/status/svg)
+
 This is an informative website aimed to let people in Myanmar know the trusted &amp; up-to-date info concerned with novel coronavirus.
 
 ### Website Links
